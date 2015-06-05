@@ -1,0 +1,6 @@
+framework module HKProjectBase {
+  umbrella header "Pods-HKProjectBase_Tests-HKProjectBase-umbrella.h"
+
+  export *
+  module * { export * }
+}
