@@ -21,7 +21,7 @@ Pod::Spec.new do |s|
   # s.screenshots     = "www.example.com/screenshots_1", "www.example.com/screenshots_2"
   s.license          = 'MIT'
   s.author           = { "Harley.xk" => "harley.gb@foxmail.com" }
-  s.source           = { :git => "https://github.com/Harley-xk/HKProjectBase.git", :tag => s.version.to_s }
+  s.source           = { :git => "https://github.com/Harley-xk/HKProjectBase.git", :tag => 0.1.0 }
   s.social_media_url = 'http://weibo.com/u/1161848005'
 
   s.platform     = :ios, '7.0'
@@ -34,5 +34,5 @@ Pod::Spec.new do |s|
 
   # s.public_header_files = 'Pod/Classes/**/*.h'
   # s.frameworks = 'UIKit', 'MapKit'
-  # s.dependency 'AFNetworking', '~> 2.3'
+  s.dependency 'MBProgressHUD', '~> 0.9.1'
 end

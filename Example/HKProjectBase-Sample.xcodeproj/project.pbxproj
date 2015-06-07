@@ -14,13 +14,13 @@
 		C32934E01B2469050029E7F9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C32934DE1B2469050029E7F9 /* Main.storyboard */; };
 		C32934E21B2469050029E7F9 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C32934E11B2469050029E7F9 /* Images.xcassets */; };
 		C32934E51B2469050029E7F9 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = C32934E31B2469050029E7F9 /* LaunchScreen.xib */; };
-		C32935091B246A0C0029E7F9 /* HK_ProgressHUD_CheckMark.png in Resources */ = {isa = PBXBuildFile; fileRef = C32934FD1B246A0C0029E7F9 /* HK_ProgressHUD_CheckMark.png */; };
-		C329350A1B246A0C0029E7F9 /* HK_ProgressHUD_CheckMark@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C32934FE1B246A0C0029E7F9 /* HK_ProgressHUD_CheckMark@2x.png */; };
-		C329350C1B246A0C0029E7F9 /* UIView+HKProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = C32935041B246A0C0029E7F9 /* UIView+HKProgressHUD.m */; };
-		C329350D1B246A0C0029E7F9 /* UIViewController+HKProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = C32935061B246A0C0029E7F9 /* UIViewController+HKProgressHUD.m */; };
-		C329350F1B246C300029E7F9 /* HKProjectBase.podspec in Resources */ = {isa = PBXBuildFile; fileRef = C329350E1B246C300029E7F9 /* HKProjectBase.podspec */; };
-		C32935111B246C370029E7F9 /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = C32935101B246C370029E7F9 /* LICENSE */; };
-		C32935131B246C3B0029E7F9 /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = C32935121B246C3B0029E7F9 /* README.md */; };
+		C32935221B246D1B0029E7F9 /* HK_ProgressHUD_CheckMark.png in Resources */ = {isa = PBXBuildFile; fileRef = C32935161B246D1B0029E7F9 /* HK_ProgressHUD_CheckMark.png */; };
+		C32935231B246D1B0029E7F9 /* HK_ProgressHUD_CheckMark@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C32935171B246D1B0029E7F9 /* HK_ProgressHUD_CheckMark@2x.png */; };
+		C32935251B246D1B0029E7F9 /* UIView+HKProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = C329351D1B246D1B0029E7F9 /* UIView+HKProgressHUD.m */; };
+		C32935261B246D1B0029E7F9 /* UIViewController+HKProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = C329351F1B246D1B0029E7F9 /* UIViewController+HKProgressHUD.m */; };
+		C329352A1B246D5D0029E7F9 /* HKProjectBase.podspec in Resources */ = {isa = PBXBuildFile; fileRef = C32935271B246D5D0029E7F9 /* HKProjectBase.podspec */; };
+		C329352B1B246D5D0029E7F9 /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = C32935281B246D5D0029E7F9 /* LICENSE */; };
+		C329352C1B246D5D0029E7F9 /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = C32935291B246D5D0029E7F9 /* README.md */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,16 +36,16 @@
 		C32934DF1B2469050029E7F9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		C32934E11B2469050029E7F9 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		C32934E41B2469050029E7F9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
-		C32934FD1B246A0C0029E7F9 /* HK_ProgressHUD_CheckMark.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = HK_ProgressHUD_CheckMark.png; sourceTree = "<group>"; };
-		C32934FE1B246A0C0029E7F9 /* HK_ProgressHUD_CheckMark@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "HK_ProgressHUD_CheckMark@2x.png"; sourceTree = "<group>"; };
-		C32935011B246A0C0029E7F9 /* HKProjectBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HKProjectBase.h; sourceTree = "<group>"; };
-		C32935031B246A0C0029E7F9 /* UIView+HKProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+HKProgressHUD.h"; sourceTree = "<group>"; };
-		C32935041B246A0C0029E7F9 /* UIView+HKProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+HKProgressHUD.m"; sourceTree = "<group>"; };
-		C32935051B246A0C0029E7F9 /* UIViewController+HKProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+HKProgressHUD.h"; sourceTree = "<group>"; };
-		C32935061B246A0C0029E7F9 /* UIViewController+HKProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+HKProgressHUD.m"; sourceTree = "<group>"; };
-		C329350E1B246C300029E7F9 /* HKProjectBase.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = HKProjectBase.podspec; sourceTree = "<group>"; };
-		C32935101B246C370029E7F9 /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
-		C32935121B246C3B0029E7F9 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		C32935161B246D1B0029E7F9 /* HK_ProgressHUD_CheckMark.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = HK_ProgressHUD_CheckMark.png; sourceTree = "<group>"; };
+		C32935171B246D1B0029E7F9 /* HK_ProgressHUD_CheckMark@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "HK_ProgressHUD_CheckMark@2x.png"; sourceTree = "<group>"; };
+		C329351A1B246D1B0029E7F9 /* HKProjectBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HKProjectBase.h; sourceTree = "<group>"; };
+		C329351C1B246D1B0029E7F9 /* UIView+HKProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+HKProgressHUD.h"; sourceTree = "<group>"; };
+		C329351D1B246D1B0029E7F9 /* UIView+HKProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+HKProgressHUD.m"; sourceTree = "<group>"; };
+		C329351E1B246D1B0029E7F9 /* UIViewController+HKProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+HKProgressHUD.h"; sourceTree = "<group>"; };
+		C329351F1B246D1B0029E7F9 /* UIViewController+HKProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+HKProgressHUD.m"; sourceTree = "<group>"; };
+		C32935271B246D5D0029E7F9 /* HKProjectBase.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = HKProjectBase.podspec; path = ../HKProjectBase.podspec; sourceTree = "<group>"; };
+		C32935281B246D5D0029E7F9 /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		C32935291B246D5D0029E7F9 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		F7F1E7CE09EDE092443A6C7E /* Pods-HKProjectBase-Sample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HKProjectBase-Sample.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HKProjectBase-Sample/Pods-HKProjectBase-Sample.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -124,46 +124,48 @@
 		C32934FA1B2469FB0029E7F9 /* HKProjectBase */ = {
 			isa = PBXGroup;
 			children = (
-				C32935121B246C3B0029E7F9 /* README.md */,
-				C32935101B246C370029E7F9 /* LICENSE */,
-				C329350E1B246C300029E7F9 /* HKProjectBase.podspec */,
-				C32934FB1B246A0C0029E7F9 /* Assets */,
-				C32934FF1B246A0C0029E7F9 /* Classes */,
+				C32935271B246D5D0029E7F9 /* HKProjectBase.podspec */,
+				C32935281B246D5D0029E7F9 /* LICENSE */,
+				C32935291B246D5D0029E7F9 /* README.md */,
+				C32935141B246D1B0029E7F9 /* Assets */,
+				C32935181B246D1B0029E7F9 /* Classes */,
 			);
 			name = HKProjectBase;
 			sourceTree = "<group>";
 		};
-		C32934FB1B246A0C0029E7F9 /* Assets */ = {
+		C32935141B246D1B0029E7F9 /* Assets */ = {
 			isa = PBXGroup;
 			children = (
-				C32934FD1B246A0C0029E7F9 /* HK_ProgressHUD_CheckMark.png */,
-				C32934FE1B246A0C0029E7F9 /* HK_ProgressHUD_CheckMark@2x.png */,
+				C32935161B246D1B0029E7F9 /* HK_ProgressHUD_CheckMark.png */,
+				C32935171B246D1B0029E7F9 /* HK_ProgressHUD_CheckMark@2x.png */,
 			);
-			path = Assets;
+			name = Assets;
+			path = ../Pod/Assets;
 			sourceTree = "<group>";
 		};
-		C32934FF1B246A0C0029E7F9 /* Classes */ = {
+		C32935181B246D1B0029E7F9 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				C32935011B246A0C0029E7F9 /* HKProjectBase.h */,
-				C32935021B246A0C0029E7F9 /* UI Extentions */,
-				C32935071B246A0C0029E7F9 /* Utils */,
+				C329351A1B246D1B0029E7F9 /* HKProjectBase.h */,
+				C329351B1B246D1B0029E7F9 /* UI Extentions */,
+				C32935201B246D1B0029E7F9 /* Utils */,
 			);
-			path = Classes;
+			name = Classes;
+			path = ../Pod/Classes;
 			sourceTree = "<group>";
 		};
-		C32935021B246A0C0029E7F9 /* UI Extentions */ = {
+		C329351B1B246D1B0029E7F9 /* UI Extentions */ = {
 			isa = PBXGroup;
 			children = (
-				C32935031B246A0C0029E7F9 /* UIView+HKProgressHUD.h */,
-				C32935041B246A0C0029E7F9 /* UIView+HKProgressHUD.m */,
-				C32935051B246A0C0029E7F9 /* UIViewController+HKProgressHUD.h */,
-				C32935061B246A0C0029E7F9 /* UIViewController+HKProgressHUD.m */,
+				C329351C1B246D1B0029E7F9 /* UIView+HKProgressHUD.h */,
+				C329351D1B246D1B0029E7F9 /* UIView+HKProgressHUD.m */,
+				C329351E1B246D1B0029E7F9 /* UIViewController+HKProgressHUD.h */,
+				C329351F1B246D1B0029E7F9 /* UIViewController+HKProgressHUD.m */,
 			);
 			path = "UI Extentions";
 			sourceTree = "<group>";
 		};
-		C32935071B246A0C0029E7F9 /* Utils */ = {
+		C32935201B246D1B0029E7F9 /* Utils */ = {
 			isa = PBXGroup;
 			children = (
 			);
@@ -232,10 +234,10 @@
 				C32934E01B2469050029E7F9 /* Main.storyboard in Resources */,
 				C32934E51B2469050029E7F9 /* LaunchScreen.xib in Resources */,
 				C32934E21B2469050029E7F9 /* Images.xcassets in Resources */,
-				C32935111B246C370029E7F9 /* LICENSE in Resources */,
-				C329350A1B246A0C0029E7F9 /* HK_ProgressHUD_CheckMark@2x.png in Resources */,
-				C329350F1B246C300029E7F9 /* HKProjectBase.podspec in Resources */,
-				C32935091B246A0C0029E7F9 /* HK_ProgressHUD_CheckMark.png in Resources */,
+				C329352B1B246D5D0029E7F9 /* LICENSE in Resources */,
+				C32935231B246D1B0029E7F9 /* HK_ProgressHUD_CheckMark@2x.png in Resources */,
+				C329352A1B246D5D0029E7F9 /* HKProjectBase.podspec in Resources */,
+				C32935221B246D1B0029E7F9 /* HK_ProgressHUD_CheckMark.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -279,11 +281,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C32935131B246C3B0029E7F9 /* README.md in Sources */,
-				C329350D1B246A0C0029E7F9 /* UIViewController+HKProgressHUD.m in Sources */,
+				C329352C1B246D5D0029E7F9 /* README.md in Sources */,
+				C32935261B246D1B0029E7F9 /* UIViewController+HKProgressHUD.m in Sources */,
 				C32934DD1B2469050029E7F9 /* ViewController.m in Sources */,
 				C32934DA1B2469050029E7F9 /* AppDelegate.m in Sources */,
-				C329350C1B246A0C0029E7F9 /* UIView+HKProgressHUD.m in Sources */,
+				C32935251B246D1B0029E7F9 /* UIView+HKProgressHUD.m in Sources */,
 				C32934D71B2469050029E7F9 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
