@@ -18,6 +18,9 @@
 		C329350A1B246A0C0029E7F9 /* HK_ProgressHUD_CheckMark@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C32934FE1B246A0C0029E7F9 /* HK_ProgressHUD_CheckMark@2x.png */; };
 		C329350C1B246A0C0029E7F9 /* UIView+HKProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = C32935041B246A0C0029E7F9 /* UIView+HKProgressHUD.m */; };
 		C329350D1B246A0C0029E7F9 /* UIViewController+HKProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = C32935061B246A0C0029E7F9 /* UIViewController+HKProgressHUD.m */; };
+		C329350F1B246C300029E7F9 /* HKProjectBase.podspec in Resources */ = {isa = PBXBuildFile; fileRef = C329350E1B246C300029E7F9 /* HKProjectBase.podspec */; };
+		C32935111B246C370029E7F9 /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = C32935101B246C370029E7F9 /* LICENSE */; };
+		C32935131B246C3B0029E7F9 /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = C32935121B246C3B0029E7F9 /* README.md */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +43,9 @@
 		C32935041B246A0C0029E7F9 /* UIView+HKProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+HKProgressHUD.m"; sourceTree = "<group>"; };
 		C32935051B246A0C0029E7F9 /* UIViewController+HKProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+HKProgressHUD.h"; sourceTree = "<group>"; };
 		C32935061B246A0C0029E7F9 /* UIViewController+HKProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+HKProgressHUD.m"; sourceTree = "<group>"; };
+		C329350E1B246C300029E7F9 /* HKProjectBase.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = HKProjectBase.podspec; sourceTree = "<group>"; };
+		C32935101B246C370029E7F9 /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		C32935121B246C3B0029E7F9 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		F7F1E7CE09EDE092443A6C7E /* Pods-HKProjectBase-Sample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HKProjectBase-Sample.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HKProjectBase-Sample/Pods-HKProjectBase-Sample.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -118,6 +124,9 @@
 		C32934FA1B2469FB0029E7F9 /* HKProjectBase */ = {
 			isa = PBXGroup;
 			children = (
+				C32935121B246C3B0029E7F9 /* README.md */,
+				C32935101B246C370029E7F9 /* LICENSE */,
+				C329350E1B246C300029E7F9 /* HKProjectBase.podspec */,
 				C32934FB1B246A0C0029E7F9 /* Assets */,
 				C32934FF1B246A0C0029E7F9 /* Classes */,
 			);
@@ -223,7 +232,9 @@
 				C32934E01B2469050029E7F9 /* Main.storyboard in Resources */,
 				C32934E51B2469050029E7F9 /* LaunchScreen.xib in Resources */,
 				C32934E21B2469050029E7F9 /* Images.xcassets in Resources */,
+				C32935111B246C370029E7F9 /* LICENSE in Resources */,
 				C329350A1B246A0C0029E7F9 /* HK_ProgressHUD_CheckMark@2x.png in Resources */,
+				C329350F1B246C300029E7F9 /* HKProjectBase.podspec in Resources */,
 				C32935091B246A0C0029E7F9 /* HK_ProgressHUD_CheckMark.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -268,6 +279,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C32935131B246C3B0029E7F9 /* README.md in Sources */,
 				C329350D1B246A0C0029E7F9 /* UIViewController+HKProgressHUD.m in Sources */,
 				C32934DD1B2469050029E7F9 /* ViewController.m in Sources */,
 				C32934DA1B2469050029E7F9 /* AppDelegate.m in Sources */,
