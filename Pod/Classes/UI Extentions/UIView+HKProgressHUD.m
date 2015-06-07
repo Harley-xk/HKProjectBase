@@ -125,10 +125,7 @@
 {
     self.progressHUD.labelText = message;
     
-    NSBundle *bundle = [NSBundle bundleWithIdentifier:@"HKProjectBase"];
-//    NSString *imagepath
-    
-    UIImage *image = [UIImage imageNamed:@"HK_ProgressHUD_CheckMark" inBundle:bundle compatibleWithTraitCollection:nil];
+    UIImage *image = [UIImage imageNamed:@"HKProjectBase.bundle/HK_ProgressHUD_CheckMark"];
     
     self.progressHUD.customView = [[UIImageView alloc] initWithImage:image];
     self.progressHUD.mode = MBProgressHUDModeCustomView;
