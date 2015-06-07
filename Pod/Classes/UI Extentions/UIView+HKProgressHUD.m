@@ -124,7 +124,13 @@
 - (void)changeProgressHUDToFinishModeWithMessage:(NSString *)message
 {
     self.progressHUD.labelText = message;
-    self.progressHUD.customView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"HK_ProgressHUD_CheckMark"]];
+    
+    NSBundle *bundle = [NSBundle bundleWithIdentifier:@"HKProjectBase"];
+//    NSString *imagepath
+    
+    UIImage *image = [UIImage imageNamed:@"HK_ProgressHUD_CheckMark" inBundle:bundle compatibleWithTraitCollection:nil];
+    
+    self.progressHUD.customView = [[UIImageView alloc] initWithImage:image];
     self.progressHUD.mode = MBProgressHUDModeCustomView;
     
     [self hideProgressHUDAfterDelay:1];
