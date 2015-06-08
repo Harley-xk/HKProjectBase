@@ -12,6 +12,7 @@
 
 - (void)setTitleColor:(UIColor *)color
 {
+    self.tintColor = [UIColor whiteColor];
     NSMutableDictionary *titleTextAttributes = [NSMutableDictionary dictionaryWithDictionary:self.titleTextAttributes];
     [titleTextAttributes setObject:color forKey:NSForegroundColorAttributeName];
     
