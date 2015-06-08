@@ -13,6 +13,7 @@
 #import "UIViewController+HKProjectBase.h"
 #import "UIAlertView+HKProjectBase.h"
 #import "UIActionSheet+HKProjectBase.h"
+#import "UINavigationBar+HKProjectBase.h"
 
 #import "HKProjectBaseUtils.h"
 #import "NSDate+Exts.h"
