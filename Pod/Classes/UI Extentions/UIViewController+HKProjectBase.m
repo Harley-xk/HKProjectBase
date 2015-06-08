@@ -62,7 +62,7 @@
  */
 + (instancetype)controllerFromMainStoryboard
 {
-    return [self controllerFromStoryboard:@"Mail"];
+    return [self controllerFromStoryboard:@"Main"];
 }
 
 + (instancetype)controllerFromStoryboard:(NSString *)storyboardName
