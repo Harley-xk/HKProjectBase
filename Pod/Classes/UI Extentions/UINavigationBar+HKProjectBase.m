@@ -12,12 +12,18 @@
 
 - (void)setTitleColor:(UIColor *)color
 {
-    [self setTitleTextAttributes:@{NSForegroundColorAttributeName:[UIColor whiteColor]}];
+    NSMutableDictionary *titleTextAttributes = [NSMutableDictionary dictionaryWithDictionary:self.titleTextAttributes];
+    [titleTextAttributes setObject:color forKey:NSForegroundColorAttributeName];
+    
+    self.titleTextAttributes = titleTextAttributes;
 }
 
 - (void)setTitleFont:(UIFont *)font
 {
-    [self setTitleTextAttributes:@{NSFontAttributeName:font}];
+    NSMutableDictionary *titleTextAttributes = [NSMutableDictionary dictionaryWithDictionary:self.titleTextAttributes];
+    [titleTextAttributes setObject:font forKey:NSFontAttributeName];
+    
+    self.titleTextAttributes = titleTextAttributes;
 }
 
 @end
