@@ -21,6 +21,11 @@
 		C329352A1B246D5D0029E7F9 /* HKProjectBase.podspec in Resources */ = {isa = PBXBuildFile; fileRef = C32935271B246D5D0029E7F9 /* HKProjectBase.podspec */; };
 		C329352B1B246D5D0029E7F9 /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = C32935281B246D5D0029E7F9 /* LICENSE */; };
 		C329352C1B246D5D0029E7F9 /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = C32935291B246D5D0029E7F9 /* README.md */; };
+		C32935611B247BB40029E7F9 /* UIViewController+HKProjectBase.m in Sources */ = {isa = PBXBuildFile; fileRef = C32935601B247BB40029E7F9 /* UIViewController+HKProjectBase.m */; };
+		C32935641B2480C30029E7F9 /* UIAlertView+HKProjectBase.m in Sources */ = {isa = PBXBuildFile; fileRef = C32935631B2480C30029E7F9 /* UIAlertView+HKProjectBase.m */; };
+		C32935671B2484EE0029E7F9 /* UIActionSheet+HKProjectBase.m in Sources */ = {isa = PBXBuildFile; fileRef = C32935661B2484EE0029E7F9 /* UIActionSheet+HKProjectBase.m */; };
+		C329356A1B2489CF0029E7F9 /* NSDate+Exts.m in Sources */ = {isa = PBXBuildFile; fileRef = C32935691B2489CF0029E7F9 /* NSDate+Exts.m */; };
+		C329356D1B248B2C0029E7F9 /* HKProjectBaseUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = C329356C1B248B2C0029E7F9 /* HKProjectBaseUtils.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -46,6 +51,16 @@
 		C32935271B246D5D0029E7F9 /* HKProjectBase.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = HKProjectBase.podspec; path = ../HKProjectBase.podspec; sourceTree = "<group>"; };
 		C32935281B246D5D0029E7F9 /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		C32935291B246D5D0029E7F9 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		C329355F1B247BB40029E7F9 /* UIViewController+HKProjectBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+HKProjectBase.h"; sourceTree = "<group>"; };
+		C32935601B247BB40029E7F9 /* UIViewController+HKProjectBase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+HKProjectBase.m"; sourceTree = "<group>"; };
+		C32935621B2480C30029E7F9 /* UIAlertView+HKProjectBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIAlertView+HKProjectBase.h"; sourceTree = "<group>"; };
+		C32935631B2480C30029E7F9 /* UIAlertView+HKProjectBase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIAlertView+HKProjectBase.m"; sourceTree = "<group>"; };
+		C32935651B2484EE0029E7F9 /* UIActionSheet+HKProjectBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIActionSheet+HKProjectBase.h"; sourceTree = "<group>"; };
+		C32935661B2484EE0029E7F9 /* UIActionSheet+HKProjectBase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIActionSheet+HKProjectBase.m"; sourceTree = "<group>"; };
+		C32935681B2489CF0029E7F9 /* NSDate+Exts.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+Exts.h"; sourceTree = "<group>"; };
+		C32935691B2489CF0029E7F9 /* NSDate+Exts.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+Exts.m"; sourceTree = "<group>"; };
+		C329356B1B248B2C0029E7F9 /* HKProjectBaseUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HKProjectBaseUtils.h; sourceTree = "<group>"; };
+		C329356C1B248B2C0029E7F9 /* HKProjectBaseUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HKProjectBaseUtils.m; sourceTree = "<group>"; };
 		F7F1E7CE09EDE092443A6C7E /* Pods-HKProjectBase-Sample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HKProjectBase-Sample.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HKProjectBase-Sample/Pods-HKProjectBase-Sample.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -161,6 +176,12 @@
 				C329351D1B246D1B0029E7F9 /* UIView+HKProgressHUD.m */,
 				C329351E1B246D1B0029E7F9 /* UIViewController+HKProgressHUD.h */,
 				C329351F1B246D1B0029E7F9 /* UIViewController+HKProgressHUD.m */,
+				C329355F1B247BB40029E7F9 /* UIViewController+HKProjectBase.h */,
+				C32935601B247BB40029E7F9 /* UIViewController+HKProjectBase.m */,
+				C32935621B2480C30029E7F9 /* UIAlertView+HKProjectBase.h */,
+				C32935631B2480C30029E7F9 /* UIAlertView+HKProjectBase.m */,
+				C32935651B2484EE0029E7F9 /* UIActionSheet+HKProjectBase.h */,
+				C32935661B2484EE0029E7F9 /* UIActionSheet+HKProjectBase.m */,
 			);
 			path = "UI Extentions";
 			sourceTree = "<group>";
@@ -168,6 +189,10 @@
 		C32935201B246D1B0029E7F9 /* Utils */ = {
 			isa = PBXGroup;
 			children = (
+				C329356B1B248B2C0029E7F9 /* HKProjectBaseUtils.h */,
+				C329356C1B248B2C0029E7F9 /* HKProjectBaseUtils.m */,
+				C32935681B2489CF0029E7F9 /* NSDate+Exts.h */,
+				C32935691B2489CF0029E7F9 /* NSDate+Exts.m */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -283,10 +308,15 @@
 			files = (
 				C329352C1B246D5D0029E7F9 /* README.md in Sources */,
 				C32935261B246D1B0029E7F9 /* UIViewController+HKProgressHUD.m in Sources */,
+				C329356A1B2489CF0029E7F9 /* NSDate+Exts.m in Sources */,
 				C32934DD1B2469050029E7F9 /* ViewController.m in Sources */,
+				C329356D1B248B2C0029E7F9 /* HKProjectBaseUtils.m in Sources */,
 				C32934DA1B2469050029E7F9 /* AppDelegate.m in Sources */,
+				C32935671B2484EE0029E7F9 /* UIActionSheet+HKProjectBase.m in Sources */,
 				C32935251B246D1B0029E7F9 /* UIView+HKProgressHUD.m in Sources */,
+				C32935611B247BB40029E7F9 /* UIViewController+HKProjectBase.m in Sources */,
 				C32934D71B2469050029E7F9 /* main.m in Sources */,
+				C32935641B2480C30029E7F9 /* UIAlertView+HKProjectBase.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -18,6 +18,9 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
+}
+
+- (IBAction)showProgress:(id)sender {
     
     [self showProgressHUDWithMessage:@"Hello world!"];
     
@@ -26,9 +29,21 @@
     });
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+- (IBAction)showAlert:(id)sender {
+
+    UIAlertView *alert = [UIAlertView alertWithTitle:@"Hello world!" message:@"World,I'm comming!" cancelButtonTitle:@"World,I'm comming!" otherButtonTitles:@[@"Haha",@"Hehe"]];
+    [alert showWithCallback:^(NSUInteger index) {
+        HKLog(@"Alert Index:", @" %lu",index);
+    }];
+}
+
+- (IBAction)showActionSheet:(id)sender {
+
+    UIActionSheet *actionSheet = [UIActionSheet actionSheetWithTitle:@"Hello world!" cancelButtonTitle:@"Cancel" destructiveButtonTitle:nil otherButtonTitles:@[@"Haha",@"Hehe"]];
+    actionSheet.destructiveButtonIndex = 1;
+    [actionSheet showInView:self.view withCallback:^(NSUInteger index) {
+        HKLog(@"ActionSheet Index:",@" %lu",index);
+    }];
 }
 
 @end
