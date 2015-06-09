@@ -1,0 +1,35 @@
+//
+//  UIViewController+HKKeyboardManager.h
+//  HKProjectBase
+//
+//  Created by Harley.xk on 15/6/9.
+//  Copyright (c) 2015年 Harley.xk. All rights reserved.
+//
+
+#import <Foundation/Foundation.h>
+#import <UIKit/UIKit.h>
+
+@interface UIViewController (HKKeyboardManager)
+
+/**
+ *  自适应键盘弹出收起，需要配合Autolayout使用
+ *
+ *  @param positionConstraint 控制需要调整位置的视图的竖向位置的约束
+ *  @param isPositiveOffset 竖向约束与视图位置的关系，若约束值增加，视图下移，则isPositiveOffset为YES，反之为NO
+ *  @param bottomSpaceBlock 需要调整位置的视图距离屏幕底部的实时距离，通过block返回。
+ */
+- (void)manageKeyboardWithPositionConstraint:(NSLayoutConstraint *)positionConstraint
+                              positiveOffset:(BOOL)isPositiveOffset
+                            bottomSpaceBlock:(CGFloat(^)(void))bottomSpaceBlock;
+
+/**
+ *  注册键盘事件观察者，并以Block形式处理
+ */
+- (void)observeKeyboardEventForKeyboardWillShow:(void(^)(NSNotification *notification))willShow
+                                       willHide:(void(^)(NSNotification *notification))willHide
+                                     willChange:(void(^)(NSNotification *notification))willChange;
+
+@end
+
+
+
