@@ -86,8 +86,6 @@ typedef void(^HKKeyboardEventHandler)(NSNotification *);
         CGRect endFrame = [[userInfo objectForKey:UIKeyboardFrameEndUserInfoKey] CGRectValue];
         CGFloat keyBoardHeight = endFrame.size.height;
         
-        self.originalTopSpace = self.topConstraint.constant;
-        
         CGFloat bottomSpace = self.bottomSpaceBlock();
         if (bottomSpace >= keyBoardHeight) {
             return;
