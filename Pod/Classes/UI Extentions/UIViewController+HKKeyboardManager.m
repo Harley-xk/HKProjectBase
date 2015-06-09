@@ -40,7 +40,7 @@ typedef void(^HKKeyboardEventHandler)(NSNotification *);
 {
     self = [super init];
     if (self) {
-
+        
         // 检测键盘事件
         [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(keyboardWillShow:) name:UIKeyboardWillShowNotification object:nil];
         [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(keyboardWillHide:) name:UIKeyboardWillHideNotification object:nil];
@@ -63,7 +63,8 @@ typedef void(^HKKeyboardEventHandler)(NSNotification *);
         CGFloat bottomSpace = self.bottomSpaceBlock();
         CGFloat offset = keyBoardHeight - bottomSpace;
         CGFloat topSpace = self.isPositiveOffset ? self.topConstraint.constant - offset : self.topConstraint.constant + offset;
-        if (topSpace > self.originalTopSpace) {
+        if ((topSpace > self.originalTopSpace && self.isPositiveOffset) ||
+            (topSpace < self.originalTopSpace && !self.isPositiveOffset)) {
             topSpace = self.originalTopSpace;
         }
         
@@ -138,8 +139,8 @@ typedef void(^HKKeyboardEventHandler)(NSNotification *);
 }
 
 - (void)manageKeyboardWithPositionConstraint:(NSLayoutConstraint *)constraint
-                                  positiveOffset:(BOOL)isPositiveOffset
-                                bottomSpaceBlock:(CGFloat(^)(void))bottomSpaceBlock
+                              positiveOffset:(BOOL)isPositiveOffset
+                            bottomSpaceBlock:(CGFloat(^)(void))bottomSpaceBlock
 {
     if (!self.keyboardManager) {
         self.keyboardManager = [[HKKeyboardManager alloc] init];
@@ -148,6 +149,7 @@ typedef void(^HKKeyboardEventHandler)(NSNotification *);
     
     self.keyboardManager.isPositiveOffset = isPositiveOffset;
     self.keyboardManager.topConstraint = constraint;
+    self.keyboardManager.originalTopSpace = constraint.constant;
     self.keyboardManager.bottomSpaceBlock = bottomSpaceBlock;
     
     self.keyboardManager.shouldManageKeyboard = YES;
@@ -164,7 +166,7 @@ typedef void(^HKKeyboardEventHandler)(NSNotification *);
     if (!self.keyboardManager) {
         self.keyboardManager = [[HKKeyboardManager alloc] init];
     }
-
+    
     self.keyboardManager.willShowHandler = willShow;
     self.keyboardManager.willChangeHandler = willChange;
     self.keyboardManager.willHideHandler = willHide;
