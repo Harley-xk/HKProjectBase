@@ -14,6 +14,8 @@
 #import "UIAlertView+HKProjectBase.h"
 #import "UIActionSheet+HKProjectBase.h"
 #import "UINavigationBar+HKProjectBase.h"
+#import "UIResponder+HKProjectBase.h"
+#import "UIViewController+HKKeyboardManager.h"
 
 #import "HKProjectBaseUtils.h"
 #import "NSDate+Exts.h"
