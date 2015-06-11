@@ -29,6 +29,7 @@
 		C3A1102D1B2712C800D08D55 /* UIViewController+HKKeyboardManager.m in Sources */ = {isa = PBXBuildFile; fileRef = C3A1102C1B2712C800D08D55 /* UIViewController+HKKeyboardManager.m */; };
 		C3A110331B271BA600D08D55 /* UIResponder+HKProjectBase.m in Sources */ = {isa = PBXBuildFile; fileRef = C3A110321B271BA600D08D55 /* UIResponder+HKProjectBase.m */; };
 		C3A147F61B25D0D3005D3304 /* UINavigationBar+HKProjectBase.m in Sources */ = {isa = PBXBuildFile; fileRef = C3A147F51B25D0D3005D3304 /* UINavigationBar+HKProjectBase.m */; };
+		C3D321801B29B5F700147A14 /* UIView+HKProjectBase.m in Sources */ = {isa = PBXBuildFile; fileRef = C3D3217F1B29B5F700147A14 /* UIView+HKProjectBase.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -70,6 +71,8 @@
 		C3A110321B271BA600D08D55 /* UIResponder+HKProjectBase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIResponder+HKProjectBase.m"; sourceTree = "<group>"; };
 		C3A147F41B25D0D3005D3304 /* UINavigationBar+HKProjectBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UINavigationBar+HKProjectBase.h"; sourceTree = "<group>"; };
 		C3A147F51B25D0D3005D3304 /* UINavigationBar+HKProjectBase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UINavigationBar+HKProjectBase.m"; sourceTree = "<group>"; };
+		C3D3217E1B29B5F700147A14 /* UIView+HKProjectBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+HKProjectBase.h"; sourceTree = "<group>"; };
+		C3D3217F1B29B5F700147A14 /* UIView+HKProjectBase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+HKProjectBase.m"; sourceTree = "<group>"; };
 		F7F1E7CE09EDE092443A6C7E /* Pods-HKProjectBase-Sample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HKProjectBase-Sample.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HKProjectBase-Sample/Pods-HKProjectBase-Sample.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -197,6 +200,8 @@
 				C3A110321B271BA600D08D55 /* UIResponder+HKProjectBase.m */,
 				C3A1102B1B2712C800D08D55 /* UIViewController+HKKeyboardManager.h */,
 				C3A1102C1B2712C800D08D55 /* UIViewController+HKKeyboardManager.m */,
+				C3D3217E1B29B5F700147A14 /* UIView+HKProjectBase.h */,
+				C3D3217F1B29B5F700147A14 /* UIView+HKProjectBase.m */,
 			);
 			path = "UI Extentions";
 			sourceTree = "<group>";
@@ -325,6 +330,7 @@
 				C3A147F61B25D0D3005D3304 /* UINavigationBar+HKProjectBase.m in Sources */,
 				C32935261B246D1B0029E7F9 /* UIViewController+HKProgressHUD.m in Sources */,
 				C329356A1B2489CF0029E7F9 /* NSDate+Exts.m in Sources */,
+				C3D321801B29B5F700147A14 /* UIView+HKProjectBase.m in Sources */,
 				C3A110331B271BA600D08D55 /* UIResponder+HKProjectBase.m in Sources */,
 				C32934DD1B2469050029E7F9 /* ViewController.m in Sources */,
 				C329356D1B248B2C0029E7F9 /* HKProjectBaseUtils.m in Sources */,
