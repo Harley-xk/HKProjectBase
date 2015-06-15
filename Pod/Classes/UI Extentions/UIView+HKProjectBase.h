@@ -10,6 +10,9 @@
 
 @interface UIView (HKProjectBase)
 
+/**
+ *  扩展以支持在IB中直接设置这些属性
+ */
 @property (nonatomic) IBInspectable CGFloat cornerRadius;
 @property (nonatomic) IBInspectable CGFloat borderWidth;
 @property (nonatomic) IBInspectable UIColor *borderColor;
