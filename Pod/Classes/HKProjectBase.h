@@ -11,13 +11,17 @@
 
 #import "UIViewController+HKProgressHUD.h"
 #import "UIViewController+HKProjectBase.h"
+#import "UIView+HKProjectBase.h"
 #import "UIAlertView+HKProjectBase.h"
 #import "UIActionSheet+HKProjectBase.h"
 #import "UINavigationBar+HKProjectBase.h"
 #import "UIResponder+HKProjectBase.h"
 #import "UIViewController+HKKeyboardManager.h"
+#import "UITextField+HKPlaceHolder.h"
+
 
 #import "HKProjectBaseUtils.h"
 #import "NSDate+Exts.h"
+#import "NSString+HKBase64.h"
 
 #endif

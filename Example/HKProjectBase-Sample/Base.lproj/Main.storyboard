@@ -45,20 +45,40 @@
                                     <action selector="showActionSheet:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="Ntm-Cb-ejY"/>
                                 </connections>
                             </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Placeholder Color Sample" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="lrQ-c9-vnS">
+                                <rect key="frame" x="16" y="142" width="218" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="218" id="8BB-Qr-lz2"/>
+                                    <constraint firstAttribute="height" constant="30" id="bYY-Bt-1cm"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="phColor">
+                                        <color key="value" red="1" green="0.27126288659999997" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </textField>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="G7R-Aj-6Dq" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="8" id="CR4-G4-m9o"/>
+                            <constraint firstItem="lrQ-c9-vnS" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" constant="16" id="IYY-2n-Gnj"/>
                             <constraint firstItem="fbv-Zk-xy1" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" id="J7I-VS-mMA"/>
                             <constraint firstItem="G7R-Aj-6Dq" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" id="Oa0-aR-LZu"/>
+                            <constraint firstItem="lrQ-c9-vnS" firstAttribute="top" secondItem="fbv-Zk-xy1" secondAttribute="bottom" constant="8" id="WvY-ki-qAj"/>
                             <constraint firstItem="be3-ra-bXq" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" id="l4F-9D-Oqa"/>
                             <constraint firstItem="be3-ra-bXq" firstAttribute="top" secondItem="G7R-Aj-6Dq" secondAttribute="bottom" constant="8" id="sVu-oh-NyE"/>
                             <constraint firstItem="fbv-Zk-xy1" firstAttribute="top" secondItem="be3-ra-bXq" secondAttribute="bottom" constant="8" id="tDb-te-sCl"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="textField" destination="lrQ-c9-vnS" id="Bue-Lu-csl"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="403" y="323"/>
         </scene>
     </scenes>
 </document>

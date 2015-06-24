@@ -26,6 +26,7 @@
 		C32935671B2484EE0029E7F9 /* UIActionSheet+HKProjectBase.m in Sources */ = {isa = PBXBuildFile; fileRef = C32935661B2484EE0029E7F9 /* UIActionSheet+HKProjectBase.m */; };
 		C329356A1B2489CF0029E7F9 /* NSDate+Exts.m in Sources */ = {isa = PBXBuildFile; fileRef = C32935691B2489CF0029E7F9 /* NSDate+Exts.m */; };
 		C329356D1B248B2C0029E7F9 /* HKProjectBaseUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = C329356C1B248B2C0029E7F9 /* HKProjectBaseUtils.m */; };
+		C333B2F01B3AAEAE00F12CBD /* UITextField+HKPlaceHolder.m in Sources */ = {isa = PBXBuildFile; fileRef = C333B2EF1B3AAEAE00F12CBD /* UITextField+HKPlaceHolder.m */; };
 		C3A1102D1B2712C800D08D55 /* UIViewController+HKKeyboardManager.m in Sources */ = {isa = PBXBuildFile; fileRef = C3A1102C1B2712C800D08D55 /* UIViewController+HKKeyboardManager.m */; };
 		C3A110331B271BA600D08D55 /* UIResponder+HKProjectBase.m in Sources */ = {isa = PBXBuildFile; fileRef = C3A110321B271BA600D08D55 /* UIResponder+HKProjectBase.m */; };
 		C3A147F61B25D0D3005D3304 /* UINavigationBar+HKProjectBase.m in Sources */ = {isa = PBXBuildFile; fileRef = C3A147F51B25D0D3005D3304 /* UINavigationBar+HKProjectBase.m */; };
@@ -66,6 +67,8 @@
 		C32935691B2489CF0029E7F9 /* NSDate+Exts.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+Exts.m"; sourceTree = "<group>"; };
 		C329356B1B248B2C0029E7F9 /* HKProjectBaseUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HKProjectBaseUtils.h; sourceTree = "<group>"; };
 		C329356C1B248B2C0029E7F9 /* HKProjectBaseUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HKProjectBaseUtils.m; sourceTree = "<group>"; };
+		C333B2EE1B3AAEAE00F12CBD /* UITextField+HKPlaceHolder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITextField+HKPlaceHolder.h"; sourceTree = "<group>"; };
+		C333B2EF1B3AAEAE00F12CBD /* UITextField+HKPlaceHolder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITextField+HKPlaceHolder.m"; sourceTree = "<group>"; };
 		C3A1102B1B2712C800D08D55 /* UIViewController+HKKeyboardManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+HKKeyboardManager.h"; sourceTree = "<group>"; };
 		C3A1102C1B2712C800D08D55 /* UIViewController+HKKeyboardManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+HKKeyboardManager.m"; sourceTree = "<group>"; };
 		C3A110311B271BA600D08D55 /* UIResponder+HKProjectBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIResponder+HKProjectBase.h"; sourceTree = "<group>"; };
@@ -191,6 +194,8 @@
 				C329351D1B246D1B0029E7F9 /* UIView+HKProgressHUD.m */,
 				C329351E1B246D1B0029E7F9 /* UIViewController+HKProgressHUD.h */,
 				C329351F1B246D1B0029E7F9 /* UIViewController+HKProgressHUD.m */,
+				C3D3217E1B29B5F700147A14 /* UIView+HKProjectBase.h */,
+				C3D3217F1B29B5F700147A14 /* UIView+HKProjectBase.m */,
 				C329355F1B247BB40029E7F9 /* UIViewController+HKProjectBase.h */,
 				C32935601B247BB40029E7F9 /* UIViewController+HKProjectBase.m */,
 				C32935621B2480C30029E7F9 /* UIAlertView+HKProjectBase.h */,
@@ -203,8 +208,8 @@
 				C3A110321B271BA600D08D55 /* UIResponder+HKProjectBase.m */,
 				C3A1102B1B2712C800D08D55 /* UIViewController+HKKeyboardManager.h */,
 				C3A1102C1B2712C800D08D55 /* UIViewController+HKKeyboardManager.m */,
-				C3D3217E1B29B5F700147A14 /* UIView+HKProjectBase.h */,
-				C3D3217F1B29B5F700147A14 /* UIView+HKProjectBase.m */,
+				C333B2EE1B3AAEAE00F12CBD /* UITextField+HKPlaceHolder.h */,
+				C333B2EF1B3AAEAE00F12CBD /* UITextField+HKPlaceHolder.m */,
 			);
 			path = "UI Extentions";
 			sourceTree = "<group>";
@@ -337,6 +342,7 @@
 				C329356A1B2489CF0029E7F9 /* NSDate+Exts.m in Sources */,
 				C3D321801B29B5F700147A14 /* UIView+HKProjectBase.m in Sources */,
 				C3A110331B271BA600D08D55 /* UIResponder+HKProjectBase.m in Sources */,
+				C333B2F01B3AAEAE00F12CBD /* UITextField+HKPlaceHolder.m in Sources */,
 				C32934DD1B2469050029E7F9 /* ViewController.m in Sources */,
 				C329356D1B248B2C0029E7F9 /* HKProjectBaseUtils.m in Sources */,
 				C32934DA1B2469050029E7F9 /* AppDelegate.m in Sources */,
