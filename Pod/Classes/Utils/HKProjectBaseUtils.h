@@ -13,22 +13,26 @@
 // =============================================
 #pragma mark - HKLOG
 #if !defined(DEBUG) || DEBUG == 0
-#define HKLog(format, ...) do {}while(0)
+#define HKLOG(format, ...) do {}while(0)
 #define HKSimpleLOG(format,...) do {}while(0)
 #elif DEBUG >= 1
 #define HKSimpleLOG(...) NSLog(__VA_ARGS__)
 //A better version of NSLog
-#define HKLog(title,format, ...) \
+#define HKLOG(title,format, ...) \
           do { \
-                HKLogTitle(title); \
+                _HKLogTitle(title); \
                 if (format) { \
-                  HKLogContent([NSString stringWithFormat:format,##__VA_ARGS__]); \
+                  _HKLogContent([NSString stringWithFormat:format,##__VA_ARGS__]); \
                 } \
-                HKLogInfo(__FILE__,__LINE__,__func__); \
+                _HKLogInfo(__FILE__,__LINE__,__func__); \
              } while (0)
 #endif
 
-extern void HKLogTitle(NSString *title);
-extern void HKLogContent(NSString *content);
-extern void HKLogInfo(const char *file, int line, const char *func);
+
+/**
+ *  Private functions, use HKLOG() or HKSimpleLOG()
+ */
+extern void _HKLogTitle(NSString *title);
+extern void _HKLogContent(NSString *content);
+extern void _HKLogInfo(const char *file, int line, const char *func);
 

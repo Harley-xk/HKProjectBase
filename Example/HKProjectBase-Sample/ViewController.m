@@ -36,7 +36,7 @@
 
     UIAlertView *alert = [UIAlertView alertWithTitle:@"Hello world!" message:@"World,I'm comming!" cancelButtonTitle:@"World,I'm comming!" otherButtonTitles:@[@"Haha",@"Hehe"]];
     [alert showWithCallback:^(NSUInteger index) {
-        HKLog(@"Alert Index:", @" %lu",index);
+        HKLOG(@"Alert Index:", @" %lu",index);
     }];
 }
 
@@ -45,7 +45,7 @@
     UIActionSheet *actionSheet = [UIActionSheet actionSheetWithTitle:@"Hello world!" cancelButtonTitle:@"Cancel" destructiveButtonTitle:nil otherButtonTitles:@[@"Haha",@"Hehe"]];
     actionSheet.destructiveButtonIndex = 1;
     [actionSheet showInView:self.view withCallback:^(NSUInteger index) {
-        HKLog(@"ActionSheet Index:",@" %lu",index);
+        HKLOG(@"ActionSheet Index:",@" %lu",index);
     }];
 }
 

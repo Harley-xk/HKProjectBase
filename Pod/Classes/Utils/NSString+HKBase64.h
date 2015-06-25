@@ -14,6 +14,7 @@
  *  Base64解码
  */
 + (NSString *)stringWithBase64EncodedString:(NSString *)base64String;
+- (NSString *)base64DecodedString;
 
 /**
  *  Base64编码

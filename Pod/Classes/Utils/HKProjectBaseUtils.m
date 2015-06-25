@@ -10,7 +10,7 @@
 #import "NSDate+Exts.h"
 
 #pragma mark - EPMLOG
-void HKLogTitle(NSString *title)
+void _HKLogTitle(NSString *title)
 {
     if (title.length <= 0) {
         return;
@@ -21,14 +21,14 @@ void HKLogTitle(NSString *title)
 //    fprintf(stderr, "\n------------------------------");
 }
 
-void HKLogContent(NSString *content)
+void _HKLogContent(NSString *content)
 {
     fprintf(stderr, "\n%s",[content UTF8String]);
 //    fprintf(stderr, "\n");
     fprintf(stderr, "\n\n------------------------");
 }
 
-void HKLogInfo(const char *file,int line,const char *func)
+void _HKLogInfo(const char *file,int line,const char *func)
 {
     fprintf(stderr, "\n %s\n",[[[NSDate date] stringWithFormat:@"yyyy-MM-dd HH:mm:ss.SSS"] UTF8String]);
     fprintf(stderr, " <%s : %d> \n %s",
