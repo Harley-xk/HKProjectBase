@@ -23,5 +23,6 @@
 #import "HKProjectBaseUtils.h"
 #import "NSDate+Exts.h"
 #import "NSString+HKBase64.h"
+#import "NSString+HKProjectBase.h"
 
 #endif

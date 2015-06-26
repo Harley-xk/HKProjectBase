@@ -1,6 +1,6 @@
 //
 //  UIResponder+HKProjectBase.h
-//  HKProjectBase-Sample
+//  HKProjectBase
 //
 //  Created by Harley.xk on 15/6/9.
 //  Copyright (c) 2015年 Harley.xk. All rights reserved.

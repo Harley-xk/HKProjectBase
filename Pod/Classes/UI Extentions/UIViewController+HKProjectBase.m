@@ -29,7 +29,7 @@
 
 +(void)load
 {
-    SEL originalSelector = NSSelectorFromString(@"dealloc");;
+    SEL originalSelector = NSSelectorFromString(@"dealloc");
     SEL overrideSelector = @selector(hk_dealloc);
     Method originalMethod = class_getInstanceMethod(self, originalSelector);
     Method overrideMethod = class_getInstanceMethod(self, overrideSelector);
