@@ -21,8 +21,10 @@
 
 
 #import "HKProjectBaseUtils.h"
+#import "HKUserDefaults.h"
 #import "NSDate+Exts.h"
 #import "NSString+HKBase64.h"
 #import "NSString+HKProjectBase.h"
+#import "NSString+HKRC4.h"
 
 #endif
