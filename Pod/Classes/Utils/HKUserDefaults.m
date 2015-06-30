@@ -25,9 +25,18 @@
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{
         sharedHKUserDefaults = [HKUserDefaults new];
-        sharedHKUserDefaults.password = @"com.Harley.xk";
     });
     return sharedHKUserDefaults;
+}
+
+- (instancetype)init
+{
+    self = [super init];
+    if (self) {
+        self.password = @"com.Harley.xk";
+        self.userDefaults = [NSUserDefaults standardUserDefaults];
+    }
+    return self;
 }
 
 + (void)setPassword:(NSString *)password
