@@ -10,6 +10,8 @@
 
 @interface UIResponder (HKProjectBase)
 
++ (void)resignAllFirstResponders;
+
 - (IBAction)hk_resighFirstResponder;
 - (IBAction)hk_becomeFirstResponder;
 

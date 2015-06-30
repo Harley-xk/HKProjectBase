@@ -10,6 +10,11 @@
 
 @implementation UIResponder (HKProjectBase)
 
++ (void)resignAllFirstResponders
+{
+    [[UIApplication sharedApplication] sendAction:@selector(resignFirstResponder) to:nil from:nil forEvent:nil];
+}
+
 - (IBAction)hk_resighFirstResponder
 {
     [self resignFirstResponder];
