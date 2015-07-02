@@ -23,11 +23,19 @@
                             bottomSpaceBlock:(CGFloat(^)(void))bottomSpaceBlock;
 
 /**
+ *  如果键盘处于弹出状态时UI发生改变，调用该方法可以在UI改变之后自动调整以适应键盘
+ *  @attention 需要事先已启用自适应键盘功能，即已执行上面的方法。
+ */
+- (void)updateLayoutWithKeyboard;
+
+
+/**
  *  注册键盘事件观察者，并以Block形式处理
  */
 - (void)observeKeyboardEventForKeyboardWillShow:(void(^)(NSNotification *notification))willShow
                                        willHide:(void(^)(NSNotification *notification))willHide
                                      willChange:(void(^)(NSNotification *notification))willChange;
+
 
 @end
 

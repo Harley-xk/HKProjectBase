@@ -19,6 +19,7 @@ typedef void(^HKKeyboardEventHandler)(NSNotification *);
 @property (strong, nonatomic) NSLayoutConstraint *topConstraint;
 @property (weak,   nonatomic) UIViewController *viewController;
 @property (assign, nonatomic) CGFloat originalTopSpace;
+@property (assign, nonatomic) CGRect currentKeyboardFrame;
 @property (assign, nonatomic) BOOL isPositiveOffset;
 @property (copy, nonatomic) CGFloat(^bottomSpaceBlock)(void);
 
@@ -49,6 +50,24 @@ typedef void(^HKKeyboardEventHandler)(NSNotification *);
     return self;
 }
 
+- (void)updateLayoutWithKeyboard
+{
+    CGFloat keyBoardHeight = self.currentKeyboardFrame.size.height;
+    
+    CGFloat bottomSpace = self.bottomSpaceBlock();
+    CGFloat offset = keyBoardHeight - bottomSpace;
+    CGFloat topSpace = self.isPositiveOffset ? self.topConstraint.constant - offset : self.topConstraint.constant + offset;
+    if ((topSpace > self.originalTopSpace && self.isPositiveOffset) ||
+        (topSpace < self.originalTopSpace && !self.isPositiveOffset)) {
+        topSpace = self.originalTopSpace;
+    }
+    
+    [UIView animateWithDuration:0.25 animations:^{
+        self.topConstraint.constant = topSpace;
+        [self.viewController.view layoutIfNeeded];
+    }];
+}
+
 - (void)keyboardWillChangeFrame:(NSNotification *)notification
 {
     if (self.shouldObserveKeyboard && self.willChangeHandler) {
@@ -58,20 +77,9 @@ typedef void(^HKKeyboardEventHandler)(NSNotification *);
     if (self.shouldManageKeyboard) {
         NSDictionary *userInfo = notification.userInfo;
         CGRect endFrame = [[userInfo objectForKey:UIKeyboardFrameEndUserInfoKey] CGRectValue];
-        CGFloat keyBoardHeight = endFrame.size.height;
-        
-        CGFloat bottomSpace = self.bottomSpaceBlock();
-        CGFloat offset = keyBoardHeight - bottomSpace;
-        CGFloat topSpace = self.isPositiveOffset ? self.topConstraint.constant - offset : self.topConstraint.constant + offset;
-        if ((topSpace > self.originalTopSpace && self.isPositiveOffset) ||
-            (topSpace < self.originalTopSpace && !self.isPositiveOffset)) {
-            topSpace = self.originalTopSpace;
-        }
-        
-        [UIView animateWithDuration:0.25 animations:^{
-            self.topConstraint.constant = topSpace;
-            [self.viewController.view layoutIfNeeded];
-        }];
+        self.currentKeyboardFrame = endFrame;
+
+        [self updateLayoutWithKeyboard];
     }
 }
 
@@ -100,6 +108,8 @@ typedef void(^HKKeyboardEventHandler)(NSNotification *);
             self.topConstraint.constant = self.isPositiveOffset ? self.originalTopSpace - offset : self.originalTopSpace + offset;
             [self.viewController.view layoutIfNeeded];
         } completion:nil];
+        
+        self.currentKeyboardFrame = endFrame;
     }
 }
 
@@ -118,6 +128,8 @@ typedef void(^HKKeyboardEventHandler)(NSNotification *);
             self.topConstraint.constant = self.originalTopSpace;
             [self.viewController.view layoutIfNeeded];
         } completion:nil];
+        
+        self.currentKeyboardFrame = CGRectZero;
     }
 }
 
@@ -152,6 +164,16 @@ typedef void(^HKKeyboardEventHandler)(NSNotification *);
     
     self.keyboardManager.shouldManageKeyboard = YES;
     self.keyboardManager.viewController = self;
+}
+
+- (void)updateLayoutWithKeyboard
+{
+    if (!self.keyboardManager) {
+        return;
+    }
+    
+    [self.view layoutIfNeeded];
+    [self.keyboardManager updateLayoutWithKeyboard];
 }
 
 /**
