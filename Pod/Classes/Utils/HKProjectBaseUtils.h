@@ -57,6 +57,11 @@ extern float HKSystemVersion();
 extern NSString* HKDeviceModel();
 
 /**
+ *  设备IP
+ */
+extern NSString* HKDeviceIP();
+
+/**
  *  获取设备方向
  */
 extern UIDeviceOrientation HKDeviceOrientation();
