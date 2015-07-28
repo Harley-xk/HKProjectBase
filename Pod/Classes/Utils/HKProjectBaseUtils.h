@@ -50,6 +50,12 @@ extern NSString* HKDeviceUUID();
 extern float HKSystemVersion();
 
 /**
+ *  App版本号
+ */
+extern NSString* HKAppVersion();
+extern NSString* HKAppVersionFull();
+
+/**
  *  设备型号
  *
  *  @return iPhone 1,2 etc...

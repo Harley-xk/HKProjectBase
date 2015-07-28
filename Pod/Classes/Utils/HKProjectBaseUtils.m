@@ -69,6 +69,21 @@ float HKSystemVersion()
 }
 
 /**
+ *  App版本号
+ */
+extern NSString* HKAppVersion()
+{
+    NSDictionary *dictionary = [[NSBundle mainBundle] infoDictionary];
+    return [dictionary objectForKey:@"CFBundleShortVersionString"];
+}
+
+extern NSString* HKAppVersionFull()
+{
+    NSDictionary *dictionary = [[NSBundle mainBundle] infoDictionary];
+    return [dictionary objectForKey:@"CFBundleVersion"];
+}
+
+/**
  *  设备型号
  *
  *  @return iPhone 1,2 etc...
