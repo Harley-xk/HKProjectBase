@@ -33,6 +33,6 @@ Pod::Spec.new do |s|
   }
 
   # s.public_header_files = 'Pod/Classes/**/*.h'
-  # s.frameworks = 'UIKit', 'MapKit', 'MobileCoreServices'
+  s.frameworks = 'UIKit', 'Foundation', 'MobileCoreServices'
   s.dependency 'MBProgressHUD', '~> 0.9.1'
 end
