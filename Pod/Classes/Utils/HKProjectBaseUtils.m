@@ -313,7 +313,7 @@ extern long long HKPathSize(NSString *path)
 extern void HKGetFolderSize(NSString *path, void(^finish)(long long size))
 {
     dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_HIGH, 0), ^{
-        long long size;
+        long long size = 0;
         
         if (HKFileExistAtPath(path))
         {

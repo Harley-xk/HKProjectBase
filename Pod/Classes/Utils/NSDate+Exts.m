@@ -304,7 +304,7 @@
     NSTimeInterval val1 = [date1 timeIntervalSince1970];
     NSTimeInterval val2 = [date2 timeIntervalSince1970];
     NSTimeInterval val = [self timeIntervalSince1970];
-    return abs(val1 - val2) == abs(val - val1) + abs(val - val2);
+    return fabs(val1 - val2) == fabs(val - val1) + fabs(val - val2);
 }
 
 - (NSDate *)dateByIgnoreOption:(NSDateCompareIgnoreOptions)option
