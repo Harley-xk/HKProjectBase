@@ -52,7 +52,7 @@
  */
 + (instancetype)controllerFromXIB
 {
-    NSString *name = [[self class] description];
+    NSString *name = [self classNameWithoutModule];
     return [[self alloc] initWithNibName:name bundle:nil];
 }
 
@@ -67,12 +67,18 @@
 
 + (instancetype)controllerFromStoryboard:(NSString *)storyboardName
 {
-    NSString *identifier = [[self class] description];
+    NSString *identifier = [self classNameWithoutModule];
     UIStoryboard *board = [UIStoryboard storyboardWithName:storyboardName bundle: nil];
     return [board instantiateViewControllerWithIdentifier:identifier];
 }
 
-
++ (NSString *)classNameWithoutModule
+{
+    NSString *name = [[self class] description];
+    NSArray *compments = [name componentsSeparatedByString:@"."];
+    name = compments.lastObject;
+    return name;
+}
 
 
 #pragma mark - Requests
