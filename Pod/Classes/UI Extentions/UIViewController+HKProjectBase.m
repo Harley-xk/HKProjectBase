@@ -80,6 +80,17 @@
     return name;
 }
 
++ (instancetype)controllerFromMainStoryboardWithIdentifier:(NSString *)identifier
+{
+    return [self controllerFromStoryboard:@"Main" withIdentifier:identifier];
+}
+
++ (instancetype)controllerFromStoryboard:(NSString *)storyboardName withIdentifier:(NSString *)identifier
+{
+    UIStoryboard *board = [UIStoryboard storyboardWithName:storyboardName bundle: nil];
+    return [board instantiateViewControllerWithIdentifier:identifier];
+}
+
 
 #pragma mark - Requests
 /**

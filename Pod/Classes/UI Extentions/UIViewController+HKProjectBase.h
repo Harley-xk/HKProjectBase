@@ -26,6 +26,14 @@
 + (instancetype)controllerFromMainStoryboard;
 + (instancetype)controllerFromStoryboard:(NSString *)storyboardName;
 
+/**
+ *  使用StoryBoard创建对象
+ *  指定identifier来创建对应的视图控制器对象
+ */
++ (instancetype)controllerFromMainStoryboardWithIdentifier:(NSString *)identifier;
++ (instancetype)controllerFromStoryboard:(NSString *)storyboardName withIdentifier:(NSString *)identifier;
+
+
 
 /**
  *  记录发起的任务（比如网络请求），如果在视图被销毁时任务还未执行完毕，这些任务将被取消并销毁
