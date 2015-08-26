@@ -26,5 +26,6 @@
 #import "NSString+HKBase64.h"
 #import "NSString+HKProjectBase.h"
 #import "NSString+HKRC4.h"
+#import "UIColor+HKHex.h"
 
 #endif
