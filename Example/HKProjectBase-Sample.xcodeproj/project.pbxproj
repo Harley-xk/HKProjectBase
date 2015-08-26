@@ -33,6 +33,7 @@
 		C3A888061B3CFA5000DB9032 /* NSString+HKProjectBase.m in Sources */ = {isa = PBXBuildFile; fileRef = C3A888051B3CFA5000DB9032 /* NSString+HKProjectBase.m */; };
 		C3C667521B2E542C00A80A92 /* NSString+HKBase64.m in Sources */ = {isa = PBXBuildFile; fileRef = C3C667511B2E542C00A80A92 /* NSString+HKBase64.m */; };
 		C3D321801B29B5F700147A14 /* UIView+HKProjectBase.m in Sources */ = {isa = PBXBuildFile; fileRef = C3D3217F1B29B5F700147A14 /* UIView+HKProjectBase.m */; };
+		C3DDA8C61B8DAB32003DB53B /* UIColor+HKHex.m in Sources */ = {isa = PBXBuildFile; fileRef = C3DDA8C51B8DAB32003DB53B /* UIColor+HKHex.m */; };
 		C3F780421B422644007002E6 /* HKUserDefaults.m in Sources */ = {isa = PBXBuildFile; fileRef = C3F780411B422644007002E6 /* HKUserDefaults.m */; };
 		C3F780451B423790007002E6 /* NSString+HKRC4.m in Sources */ = {isa = PBXBuildFile; fileRef = C3F780441B423790007002E6 /* NSString+HKRC4.m */; };
 /* End PBXBuildFile section */
@@ -84,6 +85,8 @@
 		C3C667511B2E542C00A80A92 /* NSString+HKBase64.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+HKBase64.m"; sourceTree = "<group>"; };
 		C3D3217E1B29B5F700147A14 /* UIView+HKProjectBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+HKProjectBase.h"; sourceTree = "<group>"; };
 		C3D3217F1B29B5F700147A14 /* UIView+HKProjectBase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+HKProjectBase.m"; sourceTree = "<group>"; };
+		C3DDA8C41B8DAB32003DB53B /* UIColor+HKHex.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+HKHex.h"; sourceTree = "<group>"; };
+		C3DDA8C51B8DAB32003DB53B /* UIColor+HKHex.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+HKHex.m"; sourceTree = "<group>"; };
 		C3F780401B422644007002E6 /* HKUserDefaults.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HKUserDefaults.h; sourceTree = "<group>"; };
 		C3F780411B422644007002E6 /* HKUserDefaults.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HKUserDefaults.m; sourceTree = "<group>"; };
 		C3F780431B423790007002E6 /* NSString+HKRC4.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+HKRC4.h"; sourceTree = "<group>"; };
@@ -238,6 +241,8 @@
 				C3F780441B423790007002E6 /* NSString+HKRC4.m */,
 				C3A888041B3CFA5000DB9032 /* NSString+HKProjectBase.h */,
 				C3A888051B3CFA5000DB9032 /* NSString+HKProjectBase.m */,
+				C3DDA8C41B8DAB32003DB53B /* UIColor+HKHex.h */,
+				C3DDA8C51B8DAB32003DB53B /* UIColor+HKHex.m */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -365,6 +370,7 @@
 				C32934DA1B2469050029E7F9 /* AppDelegate.m in Sources */,
 				C3C667521B2E542C00A80A92 /* NSString+HKBase64.m in Sources */,
 				C32935671B2484EE0029E7F9 /* UIActionSheet+HKProjectBase.m in Sources */,
+				C3DDA8C61B8DAB32003DB53B /* UIColor+HKHex.m in Sources */,
 				C32935251B246D1B0029E7F9 /* UIView+HKProgressHUD.m in Sources */,
 				C3A888061B3CFA5000DB9032 /* NSString+HKProjectBase.m in Sources */,
 				C3A1102D1B2712C800D08D55 /* UIViewController+HKKeyboardManager.m in Sources */,
