@@ -301,7 +301,7 @@
 - (NSDateComponents *)dateComponents:(NSCalendarUnit)unitFlags fromDate:(NSDate *)date
 {
     NSCalendar *calendar = [NSCalendar currentCalendar];
-    return [calendar components:unitFlags fromDate:self toDate:date options:0];
+    return [calendar components:unitFlags fromDate:date toDate:self options:0];
 }
 
 
