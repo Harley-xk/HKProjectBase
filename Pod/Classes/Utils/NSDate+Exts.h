@@ -96,6 +96,8 @@ typedef NS_OPTIONS(NSUInteger, NSDateCompareIgnoreOptions) {
 // @return 返回值为正，date日期在前;否则date日期在后.
 #pragma mark - ** 两个日期相隔时间段 **
 - (NSInteger)distanceInDaysToDate:(NSDate *)anotherDate;
+- (NSDateComponents *)dateComponents:(NSCalendarUnit)unitFlags fromDate:(NSDate *)date;
+
 
 #pragma mark - ** 判断某个日期在两个日期之间、比较两个日期、判断是否是周末 **
 - (BOOL)isBetween:(NSDate *)date1 date2:(NSDate *)date2;

@@ -298,6 +298,13 @@
     return components.day;
 }
 
+- (NSDateComponents *)dateComponents:(NSCalendarUnit)unitFlags fromDate:(NSDate *)date
+{
+    NSCalendar *calendar = [NSCalendar currentCalendar];
+    return [calendar components:unitFlags fromDate:self toDate:date options:0];
+}
+
+
 #pragma mark - ** 两个日期相隔时间段、比较两个日期  **
 - (BOOL)isBetween:(NSDate *)date1 date2:(NSDate *)date2
 {
