@@ -10,6 +10,13 @@
 
 @interface UIColor (HKHex)
 
+/**
+ *  使用16进制字符串创建颜色
+ *
+ *  @param hexString 16进制字符串，可以是 0XFFFFFF/#FFFFFF/FFFFFF 三种格式之一
+ *
+ *  @return 返回创建的UIColor对象
+ */
 + (UIColor *)colorWithHexString:(NSString *)hexString;
 + (UIColor *)colorWithHexString:(NSString *)hexString alpha:(CGFloat)alpha;
 
