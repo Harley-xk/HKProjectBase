@@ -136,3 +136,62 @@ extern void HKGetFolderSize(NSString *path, void(^finish)(long long size));
  *  转换字节数为最大单位可读字符串
  */
 extern NSString* HKBytesToString(long long bytes);
+
+
+#pragma mark - GCD Short Cut
+/**
+ *  延迟执行block中的代码
+ *
+ *  @param seconds 延迟的时间，单位秒
+ *  @param ^block  被执行的代码
+ *
+ *  @attention 将使用主队列执行block中的代码
+ */
+extern void HKExcuteAfterOnMainQueue(NSTimeInterval seconds, void(^block)(void));
+
+/**
+ *  延迟执行block中的代码
+ *
+ *  @param seconds 延迟的时间，单位秒
+ *  @param ^block  被执行的代码
+ *
+ *  @attention 将使用高优先级全局队列执行block中的代码
+ */
+extern void HKExcuteAfterOnHighPriorityGloableQueue(NSTimeInterval seconds, void(^block)(void));
+
+/**
+ *  延迟执行block中的代码
+ *
+ *  @param seconds 延迟的时间，单位秒
+ *  @param ^block  被执行的代码
+ *
+ *  @attention 将使用指定的队列执行block中的代码
+ */
+extern void HKExcuteAfterOnQueue(NSTimeInterval seconds, dispatch_queue_t queue, void(^block)(void));
+
+/**
+ *  异步执行block中的代码
+ *
+ *  @param ^block  被执行的代码
+ *
+ *  @attention 将使用主队列执行block中的代码
+ */
+extern void HKExcuteAsyncOnMainQueue(void(^block)(void));
+
+/**
+ *  异步执行block中的代码
+ *
+ *  @param ^block  被执行的代码
+ *
+ *  @attention 将使用高优先级全局队列执行block中的代码
+ */
+extern void HKExcuteAsyncOnHighPriorityGloableQueue(void(^block)(void));
+
+/**
+ *  异步执行block中的代码
+ *
+ *  @param ^block  被执行的代码
+ *
+ *  @attention 将使用指定的队列执行block中的代码
+ */
+extern void HKExcuteAsyncOnQueue(dispatch_queue_t queue, void(^block)(void));

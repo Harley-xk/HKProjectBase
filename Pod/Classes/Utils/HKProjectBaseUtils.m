@@ -355,3 +355,42 @@ extern NSString* HKBytesToString(long long bytes)
         return [NSString stringWithFormat:@"%.1fT",tb];
     }
 }
+
+
+#pragma mark - GCD Short Cut
+extern void HKExcuteOnMainQueueAfter(NSTimeInterval seconds, void(^block)(void))
+{
+    HKExcuteAfterOnQueue(seconds, dispatch_get_main_queue(), block);
+}
+
+extern void HKExcuteAfterOnHighPriorityGloableQueue(NSTimeInterval seconds, void(^block)(void))
+{
+    HKExcuteAfterOnQueue(seconds, dispatch_get_global_queue(0, DISPATCH_QUEUE_PRIORITY_HIGH), block);
+}
+
+extern void HKExcuteAfterOnQueue(NSTimeInterval seconds, dispatch_queue_t queue, void(^block)(void))
+{
+    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(seconds * NSEC_PER_SEC)), queue, ^{
+        if (block) {
+            block();
+        }
+    });
+}
+
+extern void HKExcuteAsyncOnMainQueue(void(^block)(void))
+{
+    HKExcuteAsyncOnQueue(dispatch_get_main_queue(), block);
+}
+
+extern void HKExcuteAsyncOnHighPriorityGloableQueue(void(^block)(void))
+{
+    HKExcuteAsyncOnQueue(dispatch_get_global_queue(0, DISPATCH_QUEUE_PRIORITY_HIGH), block);
+}
+
+extern void HKExcuteAsyncOnQueue(dispatch_queue_t queue, void(^block)(void))
+{
+    dispatch_async(queue, block);
+}
+
+
+
