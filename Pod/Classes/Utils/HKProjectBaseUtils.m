@@ -358,7 +358,7 @@ extern NSString* HKBytesToString(long long bytes)
 
 
 #pragma mark - GCD Short Cut
-extern void HKExcuteOnMainQueueAfter(NSTimeInterval seconds, void(^block)(void))
+extern void HKExcuteAfterOnMainQueue(NSTimeInterval seconds, void(^block)(void))
 {
     HKExcuteAfterOnQueue(seconds, dispatch_get_main_queue(), block);
 }
