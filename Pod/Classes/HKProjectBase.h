@@ -27,5 +27,6 @@
 #import "NSString+HKProjectBase.h"
 #import "NSString+HKRC4.h"
 #import "UIColor+HKHex.h"
+#import "HKPinYinIndexer.h"
 
 #endif
