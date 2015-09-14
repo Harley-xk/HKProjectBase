@@ -7,6 +7,8 @@
 //
 
 #import <Foundation/Foundation.h>
+#import <UIKit/UIKit.h>
+#import <CoreGraphics/CoreGraphics.h>
 
 @interface NSString (HKProjectBase)
 
@@ -78,5 +80,11 @@
  */
 - (BOOL)isPhoneOrMobileNumber;
 
+#pragma mark - Bounding Rect
+/**
+ *  计算字符串的大小，根据限定的高或者宽度，计算另一项的值
+ */
+- (CGFloat)widthLimitedToHeight:(CGFloat)height withFont:(UIFont *)font;
+- (CGFloat)heightLimitedToWidth:(CGFloat)width withFont:(UIFont *)font;
 
 @end

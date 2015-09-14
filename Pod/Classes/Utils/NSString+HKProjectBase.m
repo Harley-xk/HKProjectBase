@@ -218,5 +218,25 @@ NSString *HKRegEx_MobileNumber = @"^(([+])\\d{1,4})*1[0-9][0-9]\\d{8}$";
     return [self isPhoneNumber] || [self isMobileNumber];
 }
 
+#pragma mark - Bounding Rect
+/**
+ *  计算字符串的大小，根据限定的高或者宽度，计算另一项的值
+ */
+- (CGFloat)widthLimitedToHeight:(CGFloat)height withFont:(UIFont *)font
+{
+    return [self sizeLimitedToSize:CGSizeMake(NSIntegerMax, height) withFont:font].width;
+}
+
+- (CGFloat)heightLimitedToWidth:(CGFloat)width withFont:(UIFont *)font
+{
+    return [self sizeLimitedToSize:CGSizeMake(width, NSIntegerMax) withFont:font].height;
+}
+
+- (CGSize)sizeLimitedToSize:(CGSize)size withFont:(UIFont *)font
+{
+    CGRect rect = [self boundingRectWithSize:size options:NSStringDrawingUsesLineFragmentOrigin attributes:@{NSFontAttributeName:font} context:nil];
+    return rect.size;
+}
+
 
 @end
