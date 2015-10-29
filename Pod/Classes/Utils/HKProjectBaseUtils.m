@@ -7,7 +7,7 @@
 //
 
 #import "HKProjectBaseUtils.h"
-#import "NSDate+Exts.h"
+#import "NSDate+HKProjectBase.h"
 
 // 设备型号
 #import <sys/utsname.h>
