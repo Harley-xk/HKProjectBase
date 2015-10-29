@@ -44,11 +44,11 @@
  */
 - (NSString *)URLEncodedString
 {
-    return (__bridge NSString *)CFURLCreateStringByAddingPercentEscapes( kCFAllocatorDefault,  (CFStringRef)self, NULL, (CFStringRef)@":/?#[]@!$ &'()*+,;=\"<>%{}|\\^~`",   CFStringConvertNSStringEncodingToEncoding(NSUTF8StringEncoding));
+    return [self stringByAddingPercentEncodingWithAllowedCharacters:[NSCharacterSet characterSetWithCharactersInString:@":/?#[]@!$ &'()*+,;=\"<>%{}|\\^~`"]];
 }
 - (NSString *)URLDecodedString
 {
-    return (__bridge NSString *)CFURLCreateStringByReplacingPercentEscapesUsingEncoding(kCFAllocatorDefault, (CFStringRef)self, (CFStringRef)@":/?#[]@!$ &'()*+,;=\"<>%{}|\\^~`", CFStringConvertNSStringEncodingToEncoding(NSUTF8StringEncoding));
+    return [self stringByRemovingPercentEncoding];
 }
 
 - (BOOL)isBlank

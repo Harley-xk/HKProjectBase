@@ -11,9 +11,8 @@
 
 #import "UIViewController+HKProgressHUD.h"
 #import "UIViewController+HKProjectBase.h"
+#import "UIAlertController+HKProjectBase.h"
 #import "UIView+HKProjectBase.h"
-#import "UIAlertView+HKProjectBase.h"
-#import "UIActionSheet+HKProjectBase.h"
 #import "UINavigationBar+HKProjectBase.h"
 #import "UIResponder+HKProjectBase.h"
 #import "UIViewController+HKKeyboardManager.h"
@@ -22,7 +21,7 @@
 
 #import "HKProjectBaseUtils.h"
 #import "HKUserDefaults.h"
-#import "NSDate+Exts.h"
+#import "NSDate+HKProjectBase.h"
 #import "NSString+HKBase64.h"
 #import "NSString+HKProjectBase.h"
 #import "NSString+HKRC4.h"

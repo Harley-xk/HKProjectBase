@@ -22,9 +22,7 @@
 		C329352B1B246D5D0029E7F9 /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = C32935281B246D5D0029E7F9 /* LICENSE */; };
 		C329352C1B246D5D0029E7F9 /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = C32935291B246D5D0029E7F9 /* README.md */; };
 		C32935611B247BB40029E7F9 /* UIViewController+HKProjectBase.m in Sources */ = {isa = PBXBuildFile; fileRef = C32935601B247BB40029E7F9 /* UIViewController+HKProjectBase.m */; };
-		C32935641B2480C30029E7F9 /* UIAlertView+HKProjectBase.m in Sources */ = {isa = PBXBuildFile; fileRef = C32935631B2480C30029E7F9 /* UIAlertView+HKProjectBase.m */; };
-		C32935671B2484EE0029E7F9 /* UIActionSheet+HKProjectBase.m in Sources */ = {isa = PBXBuildFile; fileRef = C32935661B2484EE0029E7F9 /* UIActionSheet+HKProjectBase.m */; };
-		C329356A1B2489CF0029E7F9 /* NSDate+Exts.m in Sources */ = {isa = PBXBuildFile; fileRef = C32935691B2489CF0029E7F9 /* NSDate+Exts.m */; };
+		C329356A1B2489CF0029E7F9 /* NSDate+HKProjectBase.m in Sources */ = {isa = PBXBuildFile; fileRef = C32935691B2489CF0029E7F9 /* NSDate+HKProjectBase.m */; };
 		C329356D1B248B2C0029E7F9 /* HKProjectBaseUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = C329356C1B248B2C0029E7F9 /* HKProjectBaseUtils.m */; };
 		C333B2F01B3AAEAE00F12CBD /* UITextField+HKPlaceHolder.m in Sources */ = {isa = PBXBuildFile; fileRef = C333B2EF1B3AAEAE00F12CBD /* UITextField+HKPlaceHolder.m */; };
 		C3A1102D1B2712C800D08D55 /* UIViewController+HKKeyboardManager.m in Sources */ = {isa = PBXBuildFile; fileRef = C3A1102C1B2712C800D08D55 /* UIViewController+HKKeyboardManager.m */; };
@@ -33,6 +31,7 @@
 		C3A888061B3CFA5000DB9032 /* NSString+HKProjectBase.m in Sources */ = {isa = PBXBuildFile; fileRef = C3A888051B3CFA5000DB9032 /* NSString+HKProjectBase.m */; };
 		C3C667521B2E542C00A80A92 /* NSString+HKBase64.m in Sources */ = {isa = PBXBuildFile; fileRef = C3C667511B2E542C00A80A92 /* NSString+HKBase64.m */; };
 		C3C9EB961B9FF2770081321B /* HKPinYinIndexer.m in Sources */ = {isa = PBXBuildFile; fileRef = C3C9EB951B9FF2770081321B /* HKPinYinIndexer.m */; };
+		C3D1CFE71BE0BA5A0013FC26 /* UIAlertController+HKProjectBase.m in Sources */ = {isa = PBXBuildFile; fileRef = C3D1CFE61BE0BA5A0013FC26 /* UIAlertController+HKProjectBase.m */; };
 		C3D321801B29B5F700147A14 /* UIView+HKProjectBase.m in Sources */ = {isa = PBXBuildFile; fileRef = C3D3217F1B29B5F700147A14 /* UIView+HKProjectBase.m */; };
 		C3DDA8C61B8DAB32003DB53B /* UIColor+HKHex.m in Sources */ = {isa = PBXBuildFile; fileRef = C3DDA8C51B8DAB32003DB53B /* UIColor+HKHex.m */; };
 		C3F780421B422644007002E6 /* HKUserDefaults.m in Sources */ = {isa = PBXBuildFile; fileRef = C3F780411B422644007002E6 /* HKUserDefaults.m */; };
@@ -64,12 +63,8 @@
 		C32935291B246D5D0029E7F9 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		C329355F1B247BB40029E7F9 /* UIViewController+HKProjectBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+HKProjectBase.h"; sourceTree = "<group>"; };
 		C32935601B247BB40029E7F9 /* UIViewController+HKProjectBase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+HKProjectBase.m"; sourceTree = "<group>"; };
-		C32935621B2480C30029E7F9 /* UIAlertView+HKProjectBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIAlertView+HKProjectBase.h"; sourceTree = "<group>"; };
-		C32935631B2480C30029E7F9 /* UIAlertView+HKProjectBase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIAlertView+HKProjectBase.m"; sourceTree = "<group>"; };
-		C32935651B2484EE0029E7F9 /* UIActionSheet+HKProjectBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIActionSheet+HKProjectBase.h"; sourceTree = "<group>"; };
-		C32935661B2484EE0029E7F9 /* UIActionSheet+HKProjectBase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIActionSheet+HKProjectBase.m"; sourceTree = "<group>"; };
-		C32935681B2489CF0029E7F9 /* NSDate+Exts.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+Exts.h"; sourceTree = "<group>"; };
-		C32935691B2489CF0029E7F9 /* NSDate+Exts.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+Exts.m"; sourceTree = "<group>"; };
+		C32935681B2489CF0029E7F9 /* NSDate+HKProjectBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+HKProjectBase.h"; sourceTree = "<group>"; };
+		C32935691B2489CF0029E7F9 /* NSDate+HKProjectBase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+HKProjectBase.m"; sourceTree = "<group>"; };
 		C329356B1B248B2C0029E7F9 /* HKProjectBaseUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HKProjectBaseUtils.h; sourceTree = "<group>"; };
 		C329356C1B248B2C0029E7F9 /* HKProjectBaseUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HKProjectBaseUtils.m; sourceTree = "<group>"; };
 		C333B2EE1B3AAEAE00F12CBD /* UITextField+HKPlaceHolder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITextField+HKPlaceHolder.h"; sourceTree = "<group>"; };
@@ -86,6 +81,8 @@
 		C3C667511B2E542C00A80A92 /* NSString+HKBase64.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+HKBase64.m"; sourceTree = "<group>"; };
 		C3C9EB941B9FF2770081321B /* HKPinYinIndexer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HKPinYinIndexer.h; sourceTree = "<group>"; };
 		C3C9EB951B9FF2770081321B /* HKPinYinIndexer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HKPinYinIndexer.m; sourceTree = "<group>"; };
+		C3D1CFE51BE0BA5A0013FC26 /* UIAlertController+HKProjectBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIAlertController+HKProjectBase.h"; sourceTree = "<group>"; };
+		C3D1CFE61BE0BA5A0013FC26 /* UIAlertController+HKProjectBase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIAlertController+HKProjectBase.m"; sourceTree = "<group>"; };
 		C3D3217E1B29B5F700147A14 /* UIView+HKProjectBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+HKProjectBase.h"; sourceTree = "<group>"; };
 		C3D3217F1B29B5F700147A14 /* UIView+HKProjectBase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+HKProjectBase.m"; sourceTree = "<group>"; };
 		C3DDA8C41B8DAB32003DB53B /* UIColor+HKHex.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+HKHex.h"; sourceTree = "<group>"; };
@@ -213,10 +210,8 @@
 				C3D3217F1B29B5F700147A14 /* UIView+HKProjectBase.m */,
 				C329355F1B247BB40029E7F9 /* UIViewController+HKProjectBase.h */,
 				C32935601B247BB40029E7F9 /* UIViewController+HKProjectBase.m */,
-				C32935621B2480C30029E7F9 /* UIAlertView+HKProjectBase.h */,
-				C32935631B2480C30029E7F9 /* UIAlertView+HKProjectBase.m */,
-				C32935651B2484EE0029E7F9 /* UIActionSheet+HKProjectBase.h */,
-				C32935661B2484EE0029E7F9 /* UIActionSheet+HKProjectBase.m */,
+				C3D1CFE51BE0BA5A0013FC26 /* UIAlertController+HKProjectBase.h */,
+				C3D1CFE61BE0BA5A0013FC26 /* UIAlertController+HKProjectBase.m */,
 				C3A147F41B25D0D3005D3304 /* UINavigationBar+HKProjectBase.h */,
 				C3A147F51B25D0D3005D3304 /* UINavigationBar+HKProjectBase.m */,
 				C3A110311B271BA600D08D55 /* UIResponder+HKProjectBase.h */,
@@ -236,8 +231,8 @@
 				C329356C1B248B2C0029E7F9 /* HKProjectBaseUtils.m */,
 				C3F780401B422644007002E6 /* HKUserDefaults.h */,
 				C3F780411B422644007002E6 /* HKUserDefaults.m */,
-				C32935681B2489CF0029E7F9 /* NSDate+Exts.h */,
-				C32935691B2489CF0029E7F9 /* NSDate+Exts.m */,
+				C32935681B2489CF0029E7F9 /* NSDate+HKProjectBase.h */,
+				C32935691B2489CF0029E7F9 /* NSDate+HKProjectBase.m */,
 				C3C667501B2E542C00A80A92 /* NSString+HKBase64.h */,
 				C3C667511B2E542C00A80A92 /* NSString+HKBase64.m */,
 				C3F780431B423790007002E6 /* NSString+HKRC4.h */,
@@ -366,7 +361,7 @@
 				C3F780451B423790007002E6 /* NSString+HKRC4.m in Sources */,
 				C3F780421B422644007002E6 /* HKUserDefaults.m in Sources */,
 				C32935261B246D1B0029E7F9 /* UIViewController+HKProgressHUD.m in Sources */,
-				C329356A1B2489CF0029E7F9 /* NSDate+Exts.m in Sources */,
+				C329356A1B2489CF0029E7F9 /* NSDate+HKProjectBase.m in Sources */,
 				C3D321801B29B5F700147A14 /* UIView+HKProjectBase.m in Sources */,
 				C3A110331B271BA600D08D55 /* UIResponder+HKProjectBase.m in Sources */,
 				C333B2F01B3AAEAE00F12CBD /* UITextField+HKPlaceHolder.m in Sources */,
@@ -374,7 +369,7 @@
 				C329356D1B248B2C0029E7F9 /* HKProjectBaseUtils.m in Sources */,
 				C32934DA1B2469050029E7F9 /* AppDelegate.m in Sources */,
 				C3C667521B2E542C00A80A92 /* NSString+HKBase64.m in Sources */,
-				C32935671B2484EE0029E7F9 /* UIActionSheet+HKProjectBase.m in Sources */,
+				C3D1CFE71BE0BA5A0013FC26 /* UIAlertController+HKProjectBase.m in Sources */,
 				C3DDA8C61B8DAB32003DB53B /* UIColor+HKHex.m in Sources */,
 				C32935251B246D1B0029E7F9 /* UIView+HKProgressHUD.m in Sources */,
 				C3A888061B3CFA5000DB9032 /* NSString+HKProjectBase.m in Sources */,
@@ -382,7 +377,6 @@
 				C3A1102D1B2712C800D08D55 /* UIViewController+HKKeyboardManager.m in Sources */,
 				C32935611B247BB40029E7F9 /* UIViewController+HKProjectBase.m in Sources */,
 				C32934D71B2469050029E7F9 /* main.m in Sources */,
-				C32935641B2480C30029E7F9 /* UIAlertView+HKProjectBase.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -444,7 +438,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -481,7 +475,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
@@ -494,6 +488,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "HKProjectBase-Sample/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -505,6 +500,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "HKProjectBase-Sample/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};

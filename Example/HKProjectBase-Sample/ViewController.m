@@ -42,19 +42,28 @@
 
 - (IBAction)showAlert:(id)sender {
 
-    UIAlertView *alert = [UIAlertView alertWithTitle:@"Hello world!" message:@"World,I'm comming!" cancelButtonTitle:@"World,I'm comming!" otherButtonTitles:@[@"Haha",@"Hehe"]];
-    [alert showWithCallback:^(NSUInteger index) {
-        HKLOG(@"Alert Index:", @" %lu",index);
+    UIAlertController *alert = [UIAlertController alertViewWithTitle:@"Hello world!" message:@"World,I'm comming!"];
+    [alert addCancelActionWithTitle:@"World,I'm comming!" handler:nil];
+    [alert addDefaultActionWithTitle:@"Haha" handler:^(UIAlertAction * _Nonnull action) {
+        HKLOG(@"Alert Haha", @"");
     }];
+    [alert addDefaultActionWithTitle:@"Hehe" handler:^(UIAlertAction * _Nonnull action) {
+        HKLOG(@"Alert Hehe", @"");
+    }];
+    [self presentViewController:alert animated:YES completion:nil];
 }
 
 - (IBAction)showActionSheet:(id)sender {
 
-    UIActionSheet *actionSheet = [UIActionSheet actionSheetWithTitle:@"Hello world!" cancelButtonTitle:@"Cancel" destructiveButtonTitle:nil otherButtonTitles:@[@"Haha",@"Hehe"]];
-    actionSheet.destructiveButtonIndex = 1;
-    [actionSheet showInView:self.view withCallback:^(NSUInteger index) {
-        HKLOG(@"ActionSheet Index:",@" %lu",index);
+    UIAlertController *alert = [UIAlertController actonSheetWithTitle:@"Hello world!" message:@"World,I'm comming!"];
+    [alert addCancelActionWithTitle:@"World,I'm comming!" handler:nil];
+    [alert addDefaultActionWithTitle:@"Haha" handler:^(UIAlertAction * _Nonnull action) {
+        HKLOG(@"ActonSheet Haha", @"");
     }];
+    [alert addDefaultActionWithTitle:@"Hehe" handler:^(UIAlertAction * _Nonnull action) {
+        HKLOG(@"ActonSheet Hehe", @"");
+    }];
+    [self presentViewController:alert animated:YES completion:nil];
 }
 
 @end
