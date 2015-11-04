@@ -78,6 +78,7 @@ typedef NS_OPTIONS(NSUInteger, NSDateCompareIgnoreOptions) {
 - (NSDate *)dateBySetDay:(NSInteger)day;
 - (NSDate *)dateBySetMonth:(NSInteger)month;
 - (NSDate *)dateBySetYear:(NSInteger)year;
+- (NSDate *)dateWithoutTime;
 
 - (NSDate *)dateOfWeekStart;
 - (NSDate *)dateOfMonthStart;

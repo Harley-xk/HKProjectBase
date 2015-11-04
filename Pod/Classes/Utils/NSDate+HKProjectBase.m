@@ -201,6 +201,12 @@
     return [NSDate dateWithString:dateStr];
 }
 
+- (NSDate *)dateWithoutTime
+{
+    NSString *dateString = [self dateString];
+    return [NSDate dateWithDateString:dateString];
+}
+
 - (NSDate *)dateOfWeekStart
 {
     NSInteger nth = [self nthDayOfWeek];
@@ -261,20 +267,17 @@
 // 日历时间（忽略时分秒）
 - (NSInteger)distanceInDaysToDate:(NSDate *)anotherDate byCalendar:(BOOL)byCalendar
 {
-    NSDateCompareIgnoreOptions option = NSDateIgnoreHour | NSDateIgnoreMin | NSDateIgnoreSecond;
-    return [[self dateByIgnoreOption:option] distanceInDaysToDate:[anotherDate dateByIgnoreOption:option]];
+    return [[self dateWithoutTime] distanceInDaysToDate:[anotherDate dateWithoutTime]];
 }
 
 - (NSDateComponents *)dateComponents:(NSCalendarUnit)unitFlags fromDate:(NSDate *)date byCalendar:(BOOL)byCalendar;
 {
-    NSDateCompareIgnoreOptions option = NSDateIgnoreHour | NSDateIgnoreMin | NSDateIgnoreSecond;
-    return [[date dateByIgnoreOption:option] dateComponents:unitFlags fromDate:[self dateByIgnoreOption:option]];
+    return [[date dateWithoutTime] dateComponents:unitFlags fromDate:[self dateWithoutTime]];
 }
 
 - (NSDateComponents *)dateComponents:(NSCalendarUnit)unitFlags toDate:(NSDate *)date byCalendar:(BOOL)byCalendar;
 {
-    NSDateCompareIgnoreOptions option = NSDateIgnoreHour | NSDateIgnoreMin | NSDateIgnoreSecond;
-    return [[self dateByIgnoreOption:option] dateComponents:unitFlags toDate:[date dateByIgnoreOption:option]];
+    return [[self dateWithoutTime] dateComponents:unitFlags toDate:[date dateWithoutTime]];
 }
 
 #pragma mark - ** 两个日期相隔时间段、比较两个日期  **
