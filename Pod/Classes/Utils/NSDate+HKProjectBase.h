@@ -36,6 +36,7 @@
 // 常用地区
 #define LOCALE_CHINA [[NSLocale alloc] initWithLocaleIdentifier:@"zh_Hans_CN"]
 #define LOCALE_USA [[NSLocale alloc] initWithLocaleIdentifier:@"es_US"]
+#define LOCALE_CURRENT [NSLocale currentLocale]
 
 // 判断日期在两个日期之间，比较两个日期，忽略选项。
 typedef NS_OPTIONS(NSUInteger, NSDateCompareIgnoreOptions) {

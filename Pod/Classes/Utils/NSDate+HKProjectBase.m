@@ -17,7 +17,7 @@
 #pragma mark - ** 日期类方法 **
 + (id)dateWithString:(NSString *)string
 {
-    return [NSDate dateWithString:string format:NSDATE_FORMAT_NORMAL locale:LOCALE_CHINA];
+    return [NSDate dateWithString:string format:NSDATE_FORMAT_NORMAL locale:LOCALE_CURRENT];
 }
 
 + (id)dateWithDateString:(NSString *)string
@@ -32,12 +32,12 @@
 
 + (id)dateWithString:(NSString *)string format:(NSString *)format
 {
-    return [NSDate dateWithString:string format:format locale:LOCALE_CHINA];
+    return [NSDate dateWithString:string format:format locale:LOCALE_CURRENT];
 }
 
 + (id)dateWithString:(NSString *)string locale:(NSLocale *)locale
 {
-    return [NSDate dateWithString:string format:NSDATE_FORMAT_NORMAL locale:LOCALE_CHINA];
+    return [NSDate dateWithString:string format:NSDATE_FORMAT_NORMAL locale:LOCALE_CURRENT];
 }
 
 + (id)dateWithString:(NSString *)string format:(NSString *)format locale:(NSLocale *)locale
@@ -342,7 +342,7 @@
 #pragma mark - ** 按指定格式返回字符串 **
 - (NSString *)stringWithFormat:(NSString *)format
 {
-    return [self stringWithFormat:format locale:LOCALE_CHINA];
+    return [self stringWithFormat:format locale:LOCALE_CURRENT];
 }
 
 - (NSString *)stringWithFormat:(NSString *)format locale:(NSLocale *)locale
@@ -356,7 +356,7 @@
 
 - (NSString *)string
 {
-    return [self stringWithFormat:NSDATE_FORMAT_NORMAL locale:LOCALE_CHINA];
+    return [self stringWithFormat:NSDATE_FORMAT_NORMAL locale:LOCALE_CURRENT];
 }
 
 - (NSString *)dateString
