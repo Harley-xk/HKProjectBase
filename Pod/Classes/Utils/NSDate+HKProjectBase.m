@@ -299,9 +299,9 @@
     retDate = ignoreYear ? [self dateBySetYear:REFERENCE_DATE_YEAR] : retDate;
     retDate = ignoreMonth ? [self dateBySetMonth:REFERENCE_DATE_MONTH] : retDate;
     retDate = ignoreDay ? [self dateBySetDay:REFERENCE_DATE_DAY] : retDate;
-    retDate = ignoreHour ? [self dateBySetDay:REFERENCE_DATE_HOUR] : retDate;
-    retDate = ignoreMinute ? [self dateBySetDay:REFERENCE_DATE_MINUTE] : retDate;
-    retDate = ignoreSecond ? [self dateBySetDay:REFERENCE_DATE_SECOND] : retDate;
+    retDate = ignoreHour ? [self dateBySetHour:REFERENCE_DATE_HOUR] : retDate;
+    retDate = ignoreMinute ? [self dateBySetMinute:REFERENCE_DATE_MINUTE] : retDate;
+    retDate = ignoreSecond ? [self dateBySetSecond:REFERENCE_DATE_SECOND] : retDate;
     
     return retDate;
 }
