@@ -13,7 +13,7 @@
 /**
  *  用于解决tintColor无法设置NavigationBar字体颜色问题
  */
-- (void)setTitleColor:(UIColor *)color;
+- (void)hk_setTitleColor:(UIColor *)color;
 
 /**
  *  设置标题字体
