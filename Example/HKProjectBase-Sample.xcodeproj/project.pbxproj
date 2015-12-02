@@ -20,7 +20,6 @@
 		C32935261B246D1B0029E7F9 /* UIViewController+HKProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = C329351F1B246D1B0029E7F9 /* UIViewController+HKProgressHUD.m */; };
 		C329352A1B246D5D0029E7F9 /* HKProjectBase.podspec in Resources */ = {isa = PBXBuildFile; fileRef = C32935271B246D5D0029E7F9 /* HKProjectBase.podspec */; };
 		C329352B1B246D5D0029E7F9 /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = C32935281B246D5D0029E7F9 /* LICENSE */; };
-		C329352C1B246D5D0029E7F9 /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = C32935291B246D5D0029E7F9 /* README.md */; };
 		C32935611B247BB40029E7F9 /* UIViewController+HKProjectBase.m in Sources */ = {isa = PBXBuildFile; fileRef = C32935601B247BB40029E7F9 /* UIViewController+HKProjectBase.m */; };
 		C329356A1B2489CF0029E7F9 /* NSDate+HKProjectBase.m in Sources */ = {isa = PBXBuildFile; fileRef = C32935691B2489CF0029E7F9 /* NSDate+HKProjectBase.m */; };
 		C329356D1B248B2C0029E7F9 /* HKProjectBaseUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = C329356C1B248B2C0029E7F9 /* HKProjectBaseUtils.m */; };
@@ -275,7 +274,7 @@
 		C32934C91B2469050029E7F9 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0630;
+				LastUpgradeCheck = 0710;
 				ORGANIZATIONNAME = Harley.xk;
 				TargetAttributes = {
 					C32934D01B2469050029E7F9 = {
@@ -356,7 +355,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C329352C1B246D5D0029E7F9 /* README.md in Sources */,
 				C3A147F61B25D0D3005D3304 /* UINavigationBar+HKProjectBase.m in Sources */,
 				C3F780451B423790007002E6 /* NSString+HKRC4.m in Sources */,
 				C3F780421B422644007002E6 /* HKUserDefaults.m in Sources */,
@@ -423,6 +421,7 @@
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -490,6 +489,7 @@
 				INFOPLIST_FILE = "HKProjectBase-Sample/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.Harley.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -502,6 +502,7 @@
 				INFOPLIST_FILE = "HKProjectBase-Sample/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.Harley.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;

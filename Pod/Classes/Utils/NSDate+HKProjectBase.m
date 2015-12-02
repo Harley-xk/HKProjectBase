@@ -147,7 +147,7 @@
 {
     NSString *dateStr = [self string];
     NSRange range = NSMakeRange(17, 2);
-    NSString *yearStr = [NSString stringWithFormat:@"%2li",second];
+    NSString *yearStr = [NSString stringWithFormat:@"%2i", (int)second];
     dateStr = [dateStr stringByReplacingCharactersInRange:range withString:yearStr];
     NSDate *retDate = [NSDate dateWithString:dateStr];
     return retDate;
@@ -157,7 +157,7 @@
 {
     NSString *dateStr = [self string];
     NSRange range = NSMakeRange(14, 2);
-    NSString *yearStr = [NSString stringWithFormat:@"%2li", minute];
+    NSString *yearStr = [NSString stringWithFormat:@"%2i", (int)minute];
     dateStr = [dateStr stringByReplacingCharactersInRange:range withString:yearStr];
     NSDate *retDate = [NSDate dateWithString:dateStr];
     return retDate;
@@ -167,7 +167,7 @@
 {
     NSString *dateStr = [self string];
     NSRange range = NSMakeRange(11, 2);
-    NSString *yearStr = [NSString stringWithFormat:@"%2li", hour];
+    NSString *yearStr = [NSString stringWithFormat:@"%2i", (int)hour];
     dateStr = [dateStr stringByReplacingCharactersInRange:range withString:yearStr];
     NSDate *retDate = [NSDate dateWithString:dateStr];
     return retDate;
@@ -177,7 +177,7 @@
 {
     NSString *dateStr = [self string];
     NSRange range = NSMakeRange(8, 2);
-    NSString *yearStr = [NSString stringWithFormat:@"%2li", day];
+    NSString *yearStr = [NSString stringWithFormat:@"%2i", (int)day];
     dateStr = [dateStr stringByReplacingCharactersInRange:range withString:yearStr];
     NSDate *retDate = [NSDate dateWithString:dateStr];
     return retDate;
@@ -187,7 +187,7 @@
 {
     NSString *dateStr = [self string];
     NSRange range = NSMakeRange(5, 2);
-    NSString *yearStr = [NSString stringWithFormat:@"%2li", month];
+    NSString *yearStr = [NSString stringWithFormat:@"%2i", (int)month];
     dateStr = [dateStr stringByReplacingCharactersInRange:range withString:yearStr];
     return [NSDate dateWithString:dateStr];
 }
@@ -196,7 +196,7 @@
 {
     NSString *dateStr = [self string];
     NSRange range = NSMakeRange(0, 4);
-    NSString *yearStr = [NSString stringWithFormat:@"%4li", year];
+    NSString *yearStr = [NSString stringWithFormat:@"%2i", (int)year];
     dateStr = [dateStr stringByReplacingCharactersInRange:range withString:yearStr];
     return [NSDate dateWithString:dateStr];
 }
