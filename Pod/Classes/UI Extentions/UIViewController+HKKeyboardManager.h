@@ -23,6 +23,15 @@
                             bottomSpaceBlock:(CGFloat(^)(void))bottomSpaceBlock;
 
 /**
+ *  进一步分装自适应键盘功能，适用于键盘弹出收起时需要调整底部视图位置或尺寸的情况
+ *
+ *  @param bottomConstraint 关联视图到视图控制器底部的位置约束
+ *  @param view             相关联的视图
+ */
+- (void)manageKeyboardWithBottomConstraint:(NSLayoutConstraint *)bottomConstraint
+                            associatedView:(UIView *)view;
+
+/**
  *  如果键盘处于弹出状态时UI发生改变，调用该方法可以在UI改变之后自动调整以适应键盘
  *  @attention 需要事先已启用自适应键盘功能，即已执行上面的方法。
  */

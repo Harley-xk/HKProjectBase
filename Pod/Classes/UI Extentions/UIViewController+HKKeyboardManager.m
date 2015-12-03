@@ -166,6 +166,16 @@ typedef void(^HKKeyboardEventHandler)(NSNotification *);
     self.keyboardManager.viewController = self;
 }
 
+- (void)manageKeyboardWithBottomConstraint:(NSLayoutConstraint *)bottomConstraint
+                            associatedView:(UIView *)view
+{
+    __weak typeof(self) weakSelf = self;
+    __weak typeof(view) weakView = view;
+    [self manageKeyboardWithPositionConstraint:bottomConstraint positiveOffset:NO bottomSpaceBlock:^CGFloat{
+        return weakSelf.view.frame.size.height - weakView.frame.size.height - weakView.frame.origin.y;
+    }];
+}
+
 - (void)updateLayoutWithKeyboard
 {
     if (!self.keyboardManager) {
