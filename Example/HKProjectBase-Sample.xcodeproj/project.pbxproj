@@ -16,8 +16,8 @@
 		C32934E51B2469050029E7F9 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = C32934E31B2469050029E7F9 /* LaunchScreen.xib */; };
 		C32935221B246D1B0029E7F9 /* HK_ProgressHUD_CheckMark.png in Resources */ = {isa = PBXBuildFile; fileRef = C32935161B246D1B0029E7F9 /* HK_ProgressHUD_CheckMark.png */; };
 		C32935231B246D1B0029E7F9 /* HK_ProgressHUD_CheckMark@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C32935171B246D1B0029E7F9 /* HK_ProgressHUD_CheckMark@2x.png */; };
-		C32935251B246D1B0029E7F9 /* UIView+HKProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = C329351D1B246D1B0029E7F9 /* UIView+HKProgressHUD.m */; };
-		C32935261B246D1B0029E7F9 /* UIViewController+HKProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = C329351F1B246D1B0029E7F9 /* UIViewController+HKProgressHUD.m */; };
+		C32935251B246D1B0029E7F9 /* UIView+MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = C329351D1B246D1B0029E7F9 /* UIView+MBProgressHUD.m */; };
+		C32935261B246D1B0029E7F9 /* UIViewController+MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = C329351F1B246D1B0029E7F9 /* UIViewController+MBProgressHUD.m */; };
 		C329352A1B246D5D0029E7F9 /* HKProjectBase.podspec in Resources */ = {isa = PBXBuildFile; fileRef = C32935271B246D5D0029E7F9 /* HKProjectBase.podspec */; };
 		C329352B1B246D5D0029E7F9 /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = C32935281B246D5D0029E7F9 /* LICENSE */; };
 		C32935611B247BB40029E7F9 /* UIViewController+HKProjectBase.m in Sources */ = {isa = PBXBuildFile; fileRef = C32935601B247BB40029E7F9 /* UIViewController+HKProjectBase.m */; };
@@ -53,10 +53,10 @@
 		C32935161B246D1B0029E7F9 /* HK_ProgressHUD_CheckMark.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = HK_ProgressHUD_CheckMark.png; sourceTree = "<group>"; };
 		C32935171B246D1B0029E7F9 /* HK_ProgressHUD_CheckMark@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "HK_ProgressHUD_CheckMark@2x.png"; sourceTree = "<group>"; };
 		C329351A1B246D1B0029E7F9 /* HKProjectBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HKProjectBase.h; sourceTree = "<group>"; };
-		C329351C1B246D1B0029E7F9 /* UIView+HKProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+HKProgressHUD.h"; sourceTree = "<group>"; };
-		C329351D1B246D1B0029E7F9 /* UIView+HKProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+HKProgressHUD.m"; sourceTree = "<group>"; };
-		C329351E1B246D1B0029E7F9 /* UIViewController+HKProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+HKProgressHUD.h"; sourceTree = "<group>"; };
-		C329351F1B246D1B0029E7F9 /* UIViewController+HKProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+HKProgressHUD.m"; sourceTree = "<group>"; };
+		C329351C1B246D1B0029E7F9 /* UIView+MBProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+MBProgressHUD.h"; sourceTree = "<group>"; };
+		C329351D1B246D1B0029E7F9 /* UIView+MBProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+MBProgressHUD.m"; sourceTree = "<group>"; };
+		C329351E1B246D1B0029E7F9 /* UIViewController+MBProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+MBProgressHUD.h"; sourceTree = "<group>"; };
+		C329351F1B246D1B0029E7F9 /* UIViewController+MBProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+MBProgressHUD.m"; sourceTree = "<group>"; };
 		C32935271B246D5D0029E7F9 /* HKProjectBase.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = HKProjectBase.podspec; path = ../HKProjectBase.podspec; sourceTree = "<group>"; };
 		C32935281B246D5D0029E7F9 /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		C32935291B246D5D0029E7F9 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
@@ -201,10 +201,10 @@
 		C329351B1B246D1B0029E7F9 /* UI Extentions */ = {
 			isa = PBXGroup;
 			children = (
-				C329351C1B246D1B0029E7F9 /* UIView+HKProgressHUD.h */,
-				C329351D1B246D1B0029E7F9 /* UIView+HKProgressHUD.m */,
-				C329351E1B246D1B0029E7F9 /* UIViewController+HKProgressHUD.h */,
-				C329351F1B246D1B0029E7F9 /* UIViewController+HKProgressHUD.m */,
+				C329351C1B246D1B0029E7F9 /* UIView+MBProgressHUD.h */,
+				C329351D1B246D1B0029E7F9 /* UIView+MBProgressHUD.m */,
+				C329351E1B246D1B0029E7F9 /* UIViewController+MBProgressHUD.h */,
+				C329351F1B246D1B0029E7F9 /* UIViewController+MBProgressHUD.m */,
 				C3D3217E1B29B5F700147A14 /* UIView+HKProjectBase.h */,
 				C3D3217F1B29B5F700147A14 /* UIView+HKProjectBase.m */,
 				C329355F1B247BB40029E7F9 /* UIViewController+HKProjectBase.h */,
@@ -358,7 +358,7 @@
 				C3A147F61B25D0D3005D3304 /* UINavigationBar+HKProjectBase.m in Sources */,
 				C3F780451B423790007002E6 /* NSString+HKRC4.m in Sources */,
 				C3F780421B422644007002E6 /* HKUserDefaults.m in Sources */,
-				C32935261B246D1B0029E7F9 /* UIViewController+HKProgressHUD.m in Sources */,
+				C32935261B246D1B0029E7F9 /* UIViewController+MBProgressHUD.m in Sources */,
 				C329356A1B2489CF0029E7F9 /* NSDate+HKProjectBase.m in Sources */,
 				C3D321801B29B5F700147A14 /* UIView+HKProjectBase.m in Sources */,
 				C3A110331B271BA600D08D55 /* UIResponder+HKProjectBase.m in Sources */,
@@ -369,7 +369,7 @@
 				C3C667521B2E542C00A80A92 /* NSString+HKBase64.m in Sources */,
 				C3D1CFE71BE0BA5A0013FC26 /* UIAlertController+HKProjectBase.m in Sources */,
 				C3DDA8C61B8DAB32003DB53B /* UIColor+HKHex.m in Sources */,
-				C32935251B246D1B0029E7F9 /* UIView+HKProgressHUD.m in Sources */,
+				C32935251B246D1B0029E7F9 /* UIView+MBProgressHUD.m in Sources */,
 				C3A888061B3CFA5000DB9032 /* NSString+HKProjectBase.m in Sources */,
 				C3C9EB961B9FF2770081321B /* HKPinYinIndexer.m in Sources */,
 				C3A1102D1B2712C800D08D55 /* UIViewController+HKKeyboardManager.m in Sources */,

@@ -6,14 +6,14 @@
 //  Copyright (c) 2015年 Harley.xk. All rights reserved.
 //
 
-#import "UIViewController+HKProgressHUD.h"
+#import "UIViewController+MBProgressHUD.h"
 
 @interface UIView ()
 -(void)setupProgressHUD;
 @end
 
 
-@implementation UIViewController (HKProgressHUD)
+@implementation UIViewController (MBProgressHUD)
 
 /**
  *  获取当前view的唯一HUD
