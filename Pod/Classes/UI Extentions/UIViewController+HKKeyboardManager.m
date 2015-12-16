@@ -7,6 +7,7 @@
 //
 
 #import "UIViewController+HKKeyboardManager.h"
+#import "HKProjectBase.h"
 #import <objc/runtime.h>
 
 typedef void(^HKKeyboardEventHandler)(NSNotification *);
@@ -62,10 +63,12 @@ typedef void(^HKKeyboardEventHandler)(NSNotification *);
         topSpace = self.originalTopSpace;
     }
     
-    [UIView animateWithDuration:0.25 animations:^{
-        self.topConstraint.constant = topSpace;
-        [self.viewController.view layoutIfNeeded];
-    }];
+    HKExcuteAfterOnMainQueue(0.05, ^{
+        [UIView animateWithDuration:0.25 animations:^{
+            self.topConstraint.constant = topSpace;
+            [self.viewController.view layoutIfNeeded];
+        }];
+    });
 }
 
 - (void)keyboardWillChangeFrame:(NSNotification *)notification
@@ -104,10 +107,12 @@ typedef void(^HKKeyboardEventHandler)(NSNotification *);
         NSTimeInterval timeInterval = [[userInfo objectForKey:UIKeyboardAnimationDurationUserInfoKey] floatValue];
         NSUInteger option = [[userInfo objectForKey:UIKeyboardAnimationCurveUserInfoKey] integerValue];
         
-        [UIView animateWithDuration:timeInterval delay:0 options:option animations:^{
-            self.topConstraint.constant = self.isPositiveOffset ? self.originalTopSpace - offset : self.originalTopSpace + offset;
-            [self.viewController.view layoutIfNeeded];
-        } completion:nil];
+        HKExcuteAfterOnMainQueue(0.05, ^{
+            [UIView animateWithDuration:timeInterval delay:0 options:option animations:^{
+                self.topConstraint.constant = self.isPositiveOffset ? self.originalTopSpace - offset : self.originalTopSpace + offset;
+                [self.viewController.view layoutIfNeeded];
+            } completion:nil];
+        });
         
         self.currentKeyboardFrame = endFrame;
     }
@@ -124,10 +129,12 @@ typedef void(^HKKeyboardEventHandler)(NSNotification *);
         NSTimeInterval timeInterval = [[userInfo objectForKey:UIKeyboardAnimationDurationUserInfoKey] floatValue];
         NSUInteger option = [[userInfo objectForKey:UIKeyboardAnimationCurveUserInfoKey] integerValue];
         
-        [UIView animateWithDuration:timeInterval delay:0 options:option animations:^{
-            self.topConstraint.constant = self.originalTopSpace;
-            [self.viewController.view layoutIfNeeded];
-        } completion:nil];
+        HKExcuteAfterOnMainQueue(0.05, ^{
+            [UIView animateWithDuration:timeInterval delay:0 options:option animations:^{
+                self.topConstraint.constant = self.originalTopSpace;
+                [self.viewController.view layoutIfNeeded];
+            } completion:nil];
+        });
         
         self.currentKeyboardFrame = CGRectZero;
     }
