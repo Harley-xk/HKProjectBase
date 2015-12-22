@@ -22,7 +22,7 @@ typedef void(^HKKeyboardEventHandler)(NSNotification *);
 @property (assign, nonatomic) CGFloat originalTopSpace;
 @property (assign, nonatomic) CGRect currentKeyboardFrame;
 @property (assign, nonatomic) BOOL isPositiveOffset;
-@property (copy, nonatomic) CGFloat(^bottomSpaceBlock)(void);
+@property (copy,   nonatomic) CGFloat(^bottomSpaceBlock)(void);
 
 @property (copy, nonatomic) HKKeyboardEventHandler willShowHandler;
 @property (copy, nonatomic) HKKeyboardEventHandler willHideHandler;
@@ -211,5 +211,16 @@ typedef void(^HKKeyboardEventHandler)(NSNotification *);
     self.keyboardManager.shouldObserveKeyboard = YES;
     self.keyboardManager.viewController = self;
 }
+
+/**
+ *  取消/开启键盘管理
+ */
+- (void)setKeyboardManagerEnabled:(BOOL)enabled
+{
+    if (self.keyboardManager) {
+        self.keyboardManager.shouldManageKeyboard = enabled;
+    }
+}
+
 
 @end

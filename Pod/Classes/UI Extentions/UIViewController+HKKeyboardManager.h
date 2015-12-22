@@ -45,6 +45,10 @@
                                        willHide:(void(^)(NSNotification *notification))willHide
                                      willChange:(void(^)(NSNotification *notification))willChange;
 
+/**
+ *  取消/开启键盘管理
+ */
+- (void)setKeyboardManagerEnabled:(BOOL)enabled;;
 
 @end
 
