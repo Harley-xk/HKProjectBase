@@ -45,6 +45,7 @@ typedef void(^HKKeyboardEventHandler)(NSNotification *);
         
         // 检测键盘事件
         [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(keyboardWillShow:) name:UIKeyboardWillShowNotification object:nil];
+        [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(keyboardDidShow:) name:UIKeyboardDidShowNotification object:nil];
         [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(keyboardWillHide:) name:UIKeyboardWillHideNotification object:nil];
         [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(keyboardWillChangeFrame:) name:UIKeyboardWillChangeFrameNotification object:nil];
     }
@@ -71,6 +72,35 @@ typedef void(^HKKeyboardEventHandler)(NSNotification *);
     });
 }
 
+- (void)updateForKeyboardWithInfo:(NSDictionary *)userInfo
+{
+    CGRect endFrame = [[userInfo objectForKey:UIKeyboardFrameEndUserInfoKey] CGRectValue];
+    CGRect frameInView = [self.viewController.view convertRect:endFrame fromView:self.viewController.view.window];
+    
+    CGFloat keyBoardHeight = self.viewController.view.frame.size.height - frameInView.origin.y;
+    keyBoardHeight = MAX(0, keyBoardHeight);
+    
+    CGFloat bottomSpace = self.bottomSpaceBlock();
+    if (bottomSpace >= keyBoardHeight) {
+        return;
+    }
+    
+    CGFloat offset = keyBoardHeight - bottomSpace;
+    
+    NSTimeInterval timeInterval = [[userInfo objectForKey:UIKeyboardAnimationDurationUserInfoKey] floatValue];
+    NSUInteger option = [[userInfo objectForKey:UIKeyboardAnimationCurveUserInfoKey] integerValue];
+    
+    HKExcuteAfterOnMainQueue(0.05, ^{
+        [UIView animateWithDuration:timeInterval delay:0 options:option animations:^{
+            self.topConstraint.constant = self.isPositiveOffset ? self.originalTopSpace - offset : self.originalTopSpace + offset;
+            [self.viewController.view layoutIfNeeded];
+        } completion:nil];
+    });
+    
+    self.currentKeyboardFrame = endFrame;
+}
+
+
 - (void)keyboardWillChangeFrame:(NSNotification *)notification
 {
     if (self.shouldObserveKeyboard && self.willChangeHandler) {
@@ -79,10 +109,7 @@ typedef void(^HKKeyboardEventHandler)(NSNotification *);
     
     if (self.shouldManageKeyboard) {
         NSDictionary *userInfo = notification.userInfo;
-        CGRect endFrame = [[userInfo objectForKey:UIKeyboardFrameEndUserInfoKey] CGRectValue];
-        self.currentKeyboardFrame = endFrame;
-
-        [self updateLayoutWithKeyboard];
+        [self updateForKeyboardWithInfo:userInfo];
     }
 }
 
@@ -94,27 +121,15 @@ typedef void(^HKKeyboardEventHandler)(NSNotification *);
     
     if (self.shouldManageKeyboard) {
         NSDictionary *userInfo = notification.userInfo;
-        CGRect endFrame = [[userInfo objectForKey:UIKeyboardFrameEndUserInfoKey] CGRectValue];
-        CGFloat keyBoardHeight = endFrame.size.height;
-        
-        CGFloat bottomSpace = self.bottomSpaceBlock();
-        if (bottomSpace >= keyBoardHeight) {
-            return;
-        }
-        
-        CGFloat offset = keyBoardHeight - bottomSpace;
-        
-        NSTimeInterval timeInterval = [[userInfo objectForKey:UIKeyboardAnimationDurationUserInfoKey] floatValue];
-        NSUInteger option = [[userInfo objectForKey:UIKeyboardAnimationCurveUserInfoKey] integerValue];
-        
-        HKExcuteAfterOnMainQueue(0.05, ^{
-            [UIView animateWithDuration:timeInterval delay:0 options:option animations:^{
-                self.topConstraint.constant = self.isPositiveOffset ? self.originalTopSpace - offset : self.originalTopSpace + offset;
-                [self.viewController.view layoutIfNeeded];
-            } completion:nil];
-        });
-        
-        self.currentKeyboardFrame = endFrame;
+        [self updateForKeyboardWithInfo:userInfo];
+    }
+}
+
+- (void)keyboardDidShow:(NSNotification *)notification
+{    
+    if (self.shouldManageKeyboard) {
+        NSDictionary *userInfo = notification.userInfo;
+        [self updateForKeyboardWithInfo:userInfo];
     }
 }
 
@@ -179,7 +194,14 @@ typedef void(^HKKeyboardEventHandler)(NSNotification *);
     __weak typeof(self) weakSelf = self;
     __weak typeof(view) weakView = view;
     [self manageKeyboardWithPositionConstraint:bottomConstraint positiveOffset:NO bottomSpaceBlock:^CGFloat{
-        return weakSelf.view.frame.size.height - weakView.frame.size.height - weakView.frame.origin.y;
+        
+        CGFloat bottomOffSet = 0;
+        if ([weakView isKindOfClass:[UIScrollView class]]) {
+            bottomOffSet = [(UIScrollView *)weakView contentInset].bottom;
+        }
+        bottomOffSet = MAX(0, bottomOffSet);
+        
+        return weakSelf.view.frame.size.height - weakView.frame.size.height - weakView.frame.origin.y + bottomOffSet;
     }];
 }
 
