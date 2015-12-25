@@ -42,7 +42,9 @@
         self.animateAlongwithKeyboard = YES;
         self.enabled = YES;
         
-        [self registerKeyboardEvents];
+        dispatch_async(dispatch_get_main_queue(), ^{
+            [self registerKeyboardEvents];
+        });
     }
     return self;
 }
