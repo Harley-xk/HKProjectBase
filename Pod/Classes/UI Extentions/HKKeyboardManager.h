@@ -25,11 +25,11 @@
  *
  *  @param viewController 管理器所属的视图控制器
  *  @param constraint     关联的位置约束
- *  @param view           关联的 ScrollView
+ *  @param view           关联的底部的 View
  */
 + (instancetype)managerWithViewController:(UIViewController *)viewController
                        positionConstraint:(NSLayoutConstraint *)constraint
-                             viewToAdjust:(UIScrollView *)view;
+                             viewToAdjust:(UIView *)view;
 
 /**
  *  临时启用或关闭管理器

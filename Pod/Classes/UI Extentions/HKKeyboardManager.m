@@ -11,7 +11,7 @@
 
 @interface HKKeyboardManager ()
 @property (weak,   nonatomic) UIViewController *viewController;
-@property (weak,   nonatomic) UIScrollView *viewToAdjust;
+@property (weak,   nonatomic) UIView *viewToAdjust;
 @property (weak,   nonatomic) NSLayoutConstraint *positionConstraint;
 
 @property (assign, nonatomic) CGFloat originalConstant;
@@ -21,7 +21,7 @@
 
 @implementation HKKeyboardManager
 
-+ (instancetype)managerWithViewController:(UIViewController *)viewController positionConstraint:(NSLayoutConstraint *)constraint viewToAdjust:(UIScrollView *)view
++ (instancetype)managerWithViewController:(UIViewController *)viewController positionConstraint:(NSLayoutConstraint *)constraint viewToAdjust:(UIView *)view
 {
     return [[self alloc] initWithViewController:viewController positionConstraint:constraint viewToAdjust:view];
 }
@@ -31,7 +31,7 @@
     [[NSNotificationCenter defaultCenter] removeObserver:self];
 }
 
-- (instancetype)initWithViewController:(UIViewController *)viewController positionConstraint:(NSLayoutConstraint *)constraint viewToAdjust:(UIScrollView *)view
+- (instancetype)initWithViewController:(UIViewController *)viewController positionConstraint:(NSLayoutConstraint *)constraint viewToAdjust:(UIView *)view
 {
     self = [super init];
     if (self) {
@@ -58,8 +58,14 @@
 
 - (CGFloat)viewBottomSpace
 {
-    CGFloat bottomOffSet = self.viewToAdjust.contentInset.bottom;
-    bottomOffSet = MAX(0, bottomOffSet);
+    CGFloat bottomOffSet = 0;
+    
+    if ([self.viewToAdjust isKindOfClass:[UIScrollView class]]) {
+        UIScrollView *scrollView = (UIScrollView *)self.viewToAdjust;
+        bottomOffSet = scrollView.contentInset.bottom;
+        bottomOffSet = MAX(0, bottomOffSet);
+    }
+    
     return self.viewController.view.frame.size.height - self.viewToAdjust.frame.size.height - self.viewToAdjust.frame.origin.y + bottomOffSet;
 }
 
