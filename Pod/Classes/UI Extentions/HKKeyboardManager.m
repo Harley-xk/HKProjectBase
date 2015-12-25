@@ -151,7 +151,7 @@
  *  创建键盘管理器，自动关联到当前视图控制器
  */
 - (void)setupHKKeyboardManagerWithPositionConstraint:(NSLayoutConstraint *)constraint
-                                        viewToAdjust:(UIScrollView *)view
+                                        viewToAdjust:(UIView *)view
 {
     HKKeyboardManager *manager = [HKKeyboardManager managerWithViewController:self positionConstraint:constraint viewToAdjust:view];
     self.keyboardManagerHK = manager;

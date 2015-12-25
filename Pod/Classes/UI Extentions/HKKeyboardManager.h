@@ -50,7 +50,7 @@
  *  创建键盘管理器，自动关联到当前视图控制器
  */
 - (void)setupHKKeyboardManagerWithPositionConstraint:(NSLayoutConstraint *)constraint
-                                        viewToAdjust:(UIScrollView *)view;
+                                        viewToAdjust:(UIView *)view;
 
 /**
  *  获取当前已关联的键盘管理器
