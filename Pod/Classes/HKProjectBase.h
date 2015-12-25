@@ -18,6 +18,7 @@
 #import "UIViewController+HKKeyboardManager.h"
 #import "UITextField+HKPlaceHolder.h"
 
+#import "HKKeyboardManager.h"
 #import "HKProjectBaseUtils.h"
 #import "HKUserDefaults.h"
 #import "NSDate+HKProjectBase.h"

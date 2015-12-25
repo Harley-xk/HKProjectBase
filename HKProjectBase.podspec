@@ -9,7 +9,7 @@
 
 Pod::Spec.new do |s|
   s.name             = "HKProjectBase"
-  s.version          = "1.0.0"
+  s.version          = "1.1.0"
   s.summary          = "Some base extentions for iOS Projects in Objective-C."
   s.description      = <<-DESC
                        An optional longer description of HKProjectBase
@@ -21,7 +21,7 @@ Pod::Spec.new do |s|
   # s.screenshots     = "www.example.com/screenshots_1", "www.example.com/screenshots_2"
   s.license          = 'MIT'
   s.author           = { "Harley.xk" => "harley.gb@foxmail.com" }
-  s.source           = { :git => "https://github.com/Harley-xk/HKProjectBase.git"}
+s.source           = { :git => "https://github.com/Harley-xk/HKProjectBase.git" :tag => '1.1.0'}
   s.social_media_url = 'http://weibo.com/u/1161848005'
 
   s.platform     = :ios, '7.0'

@@ -11,13 +11,16 @@
 @interface UINavigationBar (HKProjectBase)
 
 /**
- *  用于解决tintColor无法设置NavigationBar字体颜色问题
+ *  设置 NavigationBar 的文字颜色
  */
-- (void)hk_setTitleColor:(UIColor *)color;
-
+- (void)setTextColor:(UIColor *)color;
 /**
  *  设置标题字体
  */
 - (void)setTitleFont:(UIFont *)font;
+
+
+#pragma mark - DEPRECATED
+- (void)hk_setTitleColor:(UIColor *)color NS_DEPRECATED_IOS(2.0,6.0,"This method is DEPRECATED, Use setTextColor: instead");
 
 @end

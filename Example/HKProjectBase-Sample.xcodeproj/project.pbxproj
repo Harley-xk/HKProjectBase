@@ -33,6 +33,7 @@
 		C3D1CFE71BE0BA5A0013FC26 /* UIAlertController+HKProjectBase.m in Sources */ = {isa = PBXBuildFile; fileRef = C3D1CFE61BE0BA5A0013FC26 /* UIAlertController+HKProjectBase.m */; };
 		C3D321801B29B5F700147A14 /* UIView+HKProjectBase.m in Sources */ = {isa = PBXBuildFile; fileRef = C3D3217F1B29B5F700147A14 /* UIView+HKProjectBase.m */; };
 		C3DDA8C61B8DAB32003DB53B /* UIColor+HKHex.m in Sources */ = {isa = PBXBuildFile; fileRef = C3DDA8C51B8DAB32003DB53B /* UIColor+HKHex.m */; };
+		C3E608F11C2C12790075F9D2 /* HKKeyboardManager.m in Sources */ = {isa = PBXBuildFile; fileRef = C3E608F01C2C12790075F9D2 /* HKKeyboardManager.m */; };
 		C3F780421B422644007002E6 /* HKUserDefaults.m in Sources */ = {isa = PBXBuildFile; fileRef = C3F780411B422644007002E6 /* HKUserDefaults.m */; };
 		C3F780451B423790007002E6 /* NSString+HKRC4.m in Sources */ = {isa = PBXBuildFile; fileRef = C3F780441B423790007002E6 /* NSString+HKRC4.m */; };
 /* End PBXBuildFile section */
@@ -86,6 +87,8 @@
 		C3D3217F1B29B5F700147A14 /* UIView+HKProjectBase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+HKProjectBase.m"; sourceTree = "<group>"; };
 		C3DDA8C41B8DAB32003DB53B /* UIColor+HKHex.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+HKHex.h"; sourceTree = "<group>"; };
 		C3DDA8C51B8DAB32003DB53B /* UIColor+HKHex.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+HKHex.m"; sourceTree = "<group>"; };
+		C3E608EF1C2C12790075F9D2 /* HKKeyboardManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HKKeyboardManager.h; path = "../UI Extentions/HKKeyboardManager.h"; sourceTree = "<group>"; };
+		C3E608F01C2C12790075F9D2 /* HKKeyboardManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HKKeyboardManager.m; path = "../UI Extentions/HKKeyboardManager.m"; sourceTree = "<group>"; };
 		C3F780401B422644007002E6 /* HKUserDefaults.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HKUserDefaults.h; sourceTree = "<group>"; };
 		C3F780411B422644007002E6 /* HKUserDefaults.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HKUserDefaults.m; sourceTree = "<group>"; };
 		C3F780431B423790007002E6 /* NSString+HKRC4.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+HKRC4.h"; sourceTree = "<group>"; };
@@ -228,6 +231,8 @@
 			children = (
 				C329356B1B248B2C0029E7F9 /* HKProjectBaseUtils.h */,
 				C329356C1B248B2C0029E7F9 /* HKProjectBaseUtils.m */,
+				C3E608EF1C2C12790075F9D2 /* HKKeyboardManager.h */,
+				C3E608F01C2C12790075F9D2 /* HKKeyboardManager.m */,
 				C3F780401B422644007002E6 /* HKUserDefaults.h */,
 				C3F780411B422644007002E6 /* HKUserDefaults.m */,
 				C32935681B2489CF0029E7F9 /* NSDate+HKProjectBase.h */,
@@ -368,6 +373,7 @@
 				C32934DA1B2469050029E7F9 /* AppDelegate.m in Sources */,
 				C3C667521B2E542C00A80A92 /* NSString+HKBase64.m in Sources */,
 				C3D1CFE71BE0BA5A0013FC26 /* UIAlertController+HKProjectBase.m in Sources */,
+				C3E608F11C2C12790075F9D2 /* HKKeyboardManager.m in Sources */,
 				C3DDA8C61B8DAB32003DB53B /* UIColor+HKHex.m in Sources */,
 				C32935251B246D1B0029E7F9 /* UIView+MBProgressHUD.m in Sources */,
 				C3A888061B3CFA5000DB9032 /* NSString+HKProjectBase.m in Sources */,

@@ -10,12 +10,13 @@
 
 @implementation UIResponder (HKProjectBase)
 
-+ (BOOL)resignAllFirstResponders
+
++ (BOOL)resignAnyFirstResponder
 {
     return [[UIApplication sharedApplication] sendAction:@selector(resignFirstResponder) to:nil from:nil forEvent:nil];
 }
 
-- (IBAction)hk_resighFirstResponder
+- (IBAction)hk_resignFirstResponder
 {
     [self resignFirstResponder];
 }
@@ -24,5 +25,18 @@
 {
     [self becomeFirstResponder];
 }
+
+#pragma mark - DEPRECATED
+
++ (BOOL)resignAllFirstResponders
+{
+    return [self resignAnyFirstResponder];
+}
+
+- (IBAction)hk_resighFirstResponder
+{
+    [self hk_resignFirstResponder];
+}
+
 
 @end

@@ -9,7 +9,13 @@
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
 
-@interface UIViewController (HKKeyboardManager)
+#pragma mark - DEPRECATED
+
+/**
+ *  _HKKeyboardManager 类扩展已经过时，不再使用，最新用法参见 HKKeyboardManager 类
+ */
+
+@interface UIViewController (_HKKeyboardManager)
 
 /**
  *  自适应键盘弹出收起，需要配合Autolayout使用
@@ -20,7 +26,7 @@
  */
 - (void)manageKeyboardWithPositionConstraint:(NSLayoutConstraint *)positionConstraint
                               positiveOffset:(BOOL)isPositiveOffset
-                            bottomSpaceBlock:(CGFloat(^)(void))bottomSpaceBlock;
+                            bottomSpaceBlock:(CGFloat(^)(void))bottomSpaceBlock NS_DEPRECATED_IOS(2.0,6.0,"This method is DEPRECATED, Use Class HKKeyboardManager instead");
 
 /**
  *  进一步分装自适应键盘功能，适用于键盘弹出收起时需要调整底部视图位置或尺寸的情况
@@ -29,7 +35,7 @@
  *  @param view             相关联的视图
  */
 - (void)manageKeyboardWithBottomConstraint:(NSLayoutConstraint *)bottomConstraint
-                            associatedView:(UIView *)view;
+                            associatedView:(UIView *)view NS_DEPRECATED_IOS(2.0,6.0,"This method is DEPRECATED, Use Class HKKeyboardManager instead");
 
 /**
  *  如果键盘处于弹出状态时UI发生改变，调用该方法可以在UI改变之后自动调整以适应键盘
@@ -43,12 +49,12 @@
  */
 - (void)observeKeyboardEventForKeyboardWillShow:(void(^)(NSNotification *notification))willShow
                                        willHide:(void(^)(NSNotification *notification))willHide
-                                     willChange:(void(^)(NSNotification *notification))willChange;
+                                     willChange:(void(^)(NSNotification *notification))willChange NS_DEPRECATED_IOS(2.0,6.0,"This method is DEPRECATED, Use Class HKKeyboardManager instead");
 
 /**
  *  取消/开启键盘管理
  */
-- (void)setKeyboardManagerEnabled:(BOOL)enabled;;
+- (void)setKeyboardManagerEnabled:(BOOL)enabled NS_DEPRECATED_IOS(2.0,6.0,"This method is DEPRECATED, Use Class HKKeyboardManager instead");
 
 @end
 

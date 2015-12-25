@@ -10,7 +10,7 @@
 
 @implementation UINavigationBar (HKProjectBase)
 
-- (void)hk_setTitleColor:(UIColor *)color
+- (void)setTextColor:(UIColor *)color
 {
     self.tintColor = [UIColor whiteColor];
     NSMutableDictionary *titleTextAttributes = [NSMutableDictionary dictionaryWithDictionary:self.titleTextAttributes];
@@ -25,6 +25,12 @@
     [titleTextAttributes setObject:font forKey:NSFontAttributeName];
     
     self.titleTextAttributes = titleTextAttributes;
+}
+
+
+- (void)hk_setTitleColor:(UIColor *)color
+{
+    [self setTextColor:color];
 }
 
 @end

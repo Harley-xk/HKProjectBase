@@ -12,7 +12,7 @@
 
 typedef void(^HKKeyboardEventHandler)(NSNotification *);
 
-@interface HKKeyboardManager : NSObject
+@interface _HKKeyboardManager : NSObject
 
 @property (assign, nonatomic) BOOL shouldManageKeyboard;
 @property (assign, nonatomic) BOOL shouldObserveKeyboard;
@@ -31,7 +31,7 @@ typedef void(^HKKeyboardEventHandler)(NSNotification *);
 @end
 
 
-@implementation HKKeyboardManager
+@implementation _HKKeyboardManager
 
 - (void)dealloc
 {
@@ -158,34 +158,34 @@ typedef void(^HKKeyboardEventHandler)(NSNotification *);
 @end
 
 
-@implementation UIViewController (HKKeyboardManager)
+@implementation UIViewController (_HKKeyboardManager)
 
-- (HKKeyboardManager *)keyboardManager
+- (_HKKeyboardManager *)hkd_keyboardManager
 {
-    return objc_getAssociatedObject(self, @selector(keyboardManager));
+    return objc_getAssociatedObject(self, @selector(hkd_keyboardManager));
 }
 
-- (void)setKeyboardManager:(HKKeyboardManager *)keyboardManager
+- (void)setHkd_keyboardManager:(_HKKeyboardManager *)hkd_keyboardManager
 {
-    objc_setAssociatedObject(self, @selector(keyboardManager), keyboardManager, OBJC_ASSOCIATION_RETAIN_NONATOMIC);
+    objc_setAssociatedObject(self, @selector(hkd_keyboardManager), hkd_keyboardManager, OBJC_ASSOCIATION_RETAIN_NONATOMIC);
 }
 
 - (void)manageKeyboardWithPositionConstraint:(NSLayoutConstraint *)constraint
                               positiveOffset:(BOOL)isPositiveOffset
                             bottomSpaceBlock:(CGFloat(^)(void))bottomSpaceBlock
 {
-    if (!self.keyboardManager) {
-        self.keyboardManager = [[HKKeyboardManager alloc] init];
+    if (!self.hkd_keyboardManager) {
+        self.hkd_keyboardManager = [[_HKKeyboardManager alloc] init];
     }
     
     
-    self.keyboardManager.isPositiveOffset = isPositiveOffset;
-    self.keyboardManager.topConstraint = constraint;
-    self.keyboardManager.originalTopSpace = constraint.constant;
-    self.keyboardManager.bottomSpaceBlock = bottomSpaceBlock;
+    self.hkd_keyboardManager.isPositiveOffset = isPositiveOffset;
+    self.hkd_keyboardManager.topConstraint = constraint;
+    self.hkd_keyboardManager.originalTopSpace = constraint.constant;
+    self.hkd_keyboardManager.bottomSpaceBlock = bottomSpaceBlock;
     
-    self.keyboardManager.shouldManageKeyboard = YES;
-    self.keyboardManager.viewController = self;
+    self.hkd_keyboardManager.shouldManageKeyboard = YES;
+    self.hkd_keyboardManager.viewController = self;
 }
 
 - (void)manageKeyboardWithBottomConstraint:(NSLayoutConstraint *)bottomConstraint
@@ -193,8 +193,8 @@ typedef void(^HKKeyboardEventHandler)(NSNotification *);
 {
     __weak typeof(self) weakSelf = self;
     __weak typeof(view) weakView = view;
-    [self manageKeyboardWithPositionConstraint:bottomConstraint positiveOffset:NO bottomSpaceBlock:^CGFloat{
-        
+    [self manageKeyboardWithPositionConstraint:bottomConstraint positiveOffset:NO bottomSpaceBlock:^CGFloat
+    {
         CGFloat bottomOffSet = 0;
         if ([weakView isKindOfClass:[UIScrollView class]]) {
             bottomOffSet = [(UIScrollView *)weakView contentInset].bottom;
@@ -207,12 +207,12 @@ typedef void(^HKKeyboardEventHandler)(NSNotification *);
 
 - (void)updateLayoutWithKeyboard
 {
-    if (!self.keyboardManager) {
+    if (!self.hkd_keyboardManager) {
         return;
     }
     
     [self.view layoutIfNeeded];
-    [self.keyboardManager updateLayoutWithKeyboard];
+    [self.hkd_keyboardManager updateLayoutWithKeyboard];
 }
 
 /**
@@ -222,16 +222,16 @@ typedef void(^HKKeyboardEventHandler)(NSNotification *);
                                        willHide:(void(^)(NSNotification *notification))willHide
                                      willChange:(void(^)(NSNotification *notification))willChange
 {
-    if (!self.keyboardManager) {
-        self.keyboardManager = [[HKKeyboardManager alloc] init];
+    if (!self.hkd_keyboardManager) {
+        self.hkd_keyboardManager = [[_HKKeyboardManager alloc] init];
     }
     
-    self.keyboardManager.willShowHandler = willShow;
-    self.keyboardManager.willChangeHandler = willChange;
-    self.keyboardManager.willHideHandler = willHide;
+    self.hkd_keyboardManager.willShowHandler = willShow;
+    self.hkd_keyboardManager.willChangeHandler = willChange;
+    self.hkd_keyboardManager.willHideHandler = willHide;
     
-    self.keyboardManager.shouldObserveKeyboard = YES;
-    self.keyboardManager.viewController = self;
+    self.hkd_keyboardManager.shouldObserveKeyboard = YES;
+    self.hkd_keyboardManager.viewController = self;
 }
 
 /**
@@ -239,8 +239,8 @@ typedef void(^HKKeyboardEventHandler)(NSNotification *);
  */
 - (void)setKeyboardManagerEnabled:(BOOL)enabled
 {
-    if (self.keyboardManager) {
-        self.keyboardManager.shouldManageKeyboard = enabled;
+    if (self.hkd_keyboardManager) {
+        self.hkd_keyboardManager.shouldManageKeyboard = enabled;
     }
 }
 
