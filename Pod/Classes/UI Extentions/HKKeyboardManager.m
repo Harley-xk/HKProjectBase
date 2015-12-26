@@ -77,13 +77,13 @@
     if (self.animateAlongwithKeyboard) {
         [self updateForKeyboardWithNotification:notification];
     }
+    [[NSNotificationCenter defaultCenter] removeObserver:self name:UIKeyboardWillShowNotification object:nil];
 }
 - (void)keyboardDidShow:(NSNotification *)notification
 {
     [self updateForKeyboardWithNotification:notification];
     
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(keyboardWillChangeFrame:) name:UIKeyboardWillChangeFrameNotification object:nil];
-    [[NSNotificationCenter defaultCenter] removeObserver:self name:UIKeyboardWillShowNotification object:nil];
 }
 - (void)keyboardWillChangeFrame:(NSNotification *)notification
 {
