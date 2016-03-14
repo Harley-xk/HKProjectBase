@@ -24,7 +24,7 @@
  *  @attention identifier需要设置为类名
  */
 + (instancetype)controllerFromMainStoryboard;
-+ (instancetype)initialControllerFromStoryboard:(NSString *)storyboardName
++ (instancetype)initialControllerFromStoryboard:(NSString *)storyboardName;
 + (instancetype)controllerFromStoryboard:(NSString *)storyboardName;
 
 /**
