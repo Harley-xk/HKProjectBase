@@ -65,6 +65,12 @@
     return [self controllerFromStoryboard:@"Main"];
 }
 
++ (instancetype)initialControllerFromStoryboard:(NSString *)storyboardName
+{
+    UIStoryboard *board = [UIStoryboard storyboardWithName:storyboardName bundle: nil];
+    return [board instantiateInitialViewController];
+}
+
 + (instancetype)controllerFromStoryboard:(NSString *)storyboardName
 {
     NSString *identifier = [self classNameWithoutModule];
