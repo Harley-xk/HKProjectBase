@@ -97,6 +97,29 @@
     return [board instantiateViewControllerWithIdentifier:identifier];
 }
 
+/**
+ *  设置当前视图的导航条返回按钮标题
+ *  @attention 只有使用默认返回按钮时有效
+ */
+- (void)setNavigationBackItemTitle:(NSString *)title
+{
+    if (self.navigationController.viewControllers.count < 2) {
+        return;
+    }
+    NSInteger index = self.navigationController.viewControllers.count - 2;
+    
+    UIViewController *before = self.navigationController.viewControllers[index];
+    before.navigationItem.backBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:title style:UIBarButtonItemStylePlain target:nil action:nil];
+}
+
+/**
+ *  设置导航控制器栈中下一个视图的返回按钮标题
+ *  @attention 不会改变当前返回按钮的标题
+ */
+- (void)setNextNavigationBackItemTitle:(NSString *)title
+{
+    self.navigationItem.backBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:title style:UIBarButtonItemStylePlain target:nil action:nil];
+}
 
 #pragma mark - Requests
 /**
