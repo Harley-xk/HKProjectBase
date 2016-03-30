@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "UIViewController+HKProjectBase.h"
 
 @interface UIView (HKProjectBase)
 
@@ -16,5 +17,10 @@
 @property (nonatomic) IBInspectable CGFloat cornerRadius;
 @property (nonatomic) IBInspectable CGFloat borderWidth;
 @property (nonatomic) IBInspectable UIColor *borderColor;
+
+/**
+ *  记录发起的任务（比如网络请求），如果在视图被销毁时任务还未执行完毕，这些任务将被取消并销毁
+ */
+- (void)recordTask:(id<HKTaskProtocol>)task;
 
 @end
