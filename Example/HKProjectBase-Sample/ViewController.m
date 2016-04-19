@@ -31,13 +31,13 @@
 
 - (IBAction)showProgress:(id)sender {
     
-    [self showProgressHUDWithMessage:@"Hello world!"];
+//    [self showProgressHUDWithMessage:@"Hello world!"];
+//    
+//    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(2 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+//        [self changeProgressHUDToFinishModeWithMessage:@"Show task finished!"];
+//    });
     
-    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(2 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
-        [self changeProgressHUDToFinishModeWithMessage:@"Show task finished!"];
-    });
-    
-    HKMakePhoneCall(@"10086",NO);
+//    HKMakePhoneCall(@"10086",NO);
 }
 
 - (IBAction)showAlert:(id)sender {

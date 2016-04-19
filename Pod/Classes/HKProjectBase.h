@@ -9,7 +9,6 @@
 #ifndef Pods_HKProjectBase_h
 #define Pods_HKProjectBase_h
 
-#import "UIViewController+MBProgressHUD.h"
 #import "UIViewController+HKProjectBase.h"
 #import "UIAlertController+HKProjectBase.h"
 #import "UIView+HKProjectBase.h"
