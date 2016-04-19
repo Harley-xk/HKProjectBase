@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		34A8FE892DBA4AA8261B5983 /* libPods-HKProjectBase-Sample.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A427122FC33D74D43132950F /* libPods-HKProjectBase-Sample.a */; };
+		C307C2B61CC65CBD00CB3C72 /* HKThinLine.m in Sources */ = {isa = PBXBuildFile; fileRef = C307C2B51CC65CBD00CB3C72 /* HKThinLine.m */; };
 		C32934D71B2469050029E7F9 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C32934D61B2469050029E7F9 /* main.m */; };
 		C32934DA1B2469050029E7F9 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C32934D91B2469050029E7F9 /* AppDelegate.m */; };
 		C32934DD1B2469050029E7F9 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C32934DC1B2469050029E7F9 /* ViewController.m */; };
@@ -41,6 +42,8 @@
 /* Begin PBXFileReference section */
 		9AA50200010FF44ECCEA6E86 /* Pods-HKProjectBase-Sample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HKProjectBase-Sample.release.xcconfig"; path = "Pods/Target Support Files/Pods-HKProjectBase-Sample/Pods-HKProjectBase-Sample.release.xcconfig"; sourceTree = "<group>"; };
 		A427122FC33D74D43132950F /* libPods-HKProjectBase-Sample.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-HKProjectBase-Sample.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C307C2B41CC65CBD00CB3C72 /* HKThinLine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HKThinLine.h; sourceTree = "<group>"; };
+		C307C2B51CC65CBD00CB3C72 /* HKThinLine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HKThinLine.m; sourceTree = "<group>"; };
 		C32934D11B2469050029E7F9 /* HKProjectBase-Sample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "HKProjectBase-Sample.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C32934D51B2469050029E7F9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C32934D61B2469050029E7F9 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -247,6 +250,8 @@
 				C3DDA8C51B8DAB32003DB53B /* UIColor+HKHex.m */,
 				C3C9EB941B9FF2770081321B /* HKPinYinIndexer.h */,
 				C3C9EB951B9FF2770081321B /* HKPinYinIndexer.m */,
+				C307C2B41CC65CBD00CB3C72 /* HKThinLine.h */,
+				C307C2B51CC65CBD00CB3C72 /* HKThinLine.m */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -375,6 +380,7 @@
 				C3D1CFE71BE0BA5A0013FC26 /* UIAlertController+HKProjectBase.m in Sources */,
 				C3E608F11C2C12790075F9D2 /* HKKeyboardManager.m in Sources */,
 				C3DDA8C61B8DAB32003DB53B /* UIColor+HKHex.m in Sources */,
+				C307C2B61CC65CBD00CB3C72 /* HKThinLine.m in Sources */,
 				C32935251B246D1B0029E7F9 /* UIView+MBProgressHUD.m in Sources */,
 				C3A888061B3CFA5000DB9032 /* NSString+HKProjectBase.m in Sources */,
 				C3C9EB961B9FF2770081321B /* HKPinYinIndexer.m in Sources */,
