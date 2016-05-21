@@ -9,21 +9,53 @@
 /* Begin PBXBuildFile section */
 		34A8FE892DBA4AA8261B5983 /* libPods-HKProjectBase-Sample.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A427122FC33D74D43132950F /* libPods-HKProjectBase-Sample.a */; };
 		C307C2B61CC65CBD00CB3C72 /* HKThinLine.m in Sources */ = {isa = PBXBuildFile; fileRef = C307C2B51CC65CBD00CB3C72 /* HKThinLine.m */; };
+		C30AB8881CF09DF20068C0A4 /* HKProjectBase.h in Headers */ = {isa = PBXBuildFile; fileRef = C30AB8871CF09DF20068C0A4 /* HKProjectBase.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C30AB88C1CF09DF20068C0A4 /* HKProjectBase.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C30AB8851CF09DF20068C0A4 /* HKProjectBase.framework */; };
+		C30AB88D1CF09DF20068C0A4 /* HKProjectBase.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = C30AB8851CF09DF20068C0A4 /* HKProjectBase.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		C30AB8921CF09E470068C0A4 /* UIView+HKProjectBase.h in Headers */ = {isa = PBXBuildFile; fileRef = C3D3217E1B29B5F700147A14 /* UIView+HKProjectBase.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C30AB8931CF09E470068C0A4 /* UIViewController+HKProjectBase.h in Headers */ = {isa = PBXBuildFile; fileRef = C329355F1B247BB40029E7F9 /* UIViewController+HKProjectBase.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C30AB8941CF09E470068C0A4 /* UIAlertController+HKProjectBase.h in Headers */ = {isa = PBXBuildFile; fileRef = C3D1CFE51BE0BA5A0013FC26 /* UIAlertController+HKProjectBase.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C30AB8951CF09E470068C0A4 /* UINavigationBar+HKProjectBase.h in Headers */ = {isa = PBXBuildFile; fileRef = C3A147F41B25D0D3005D3304 /* UINavigationBar+HKProjectBase.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C30AB8961CF09E470068C0A4 /* UIResponder+HKProjectBase.h in Headers */ = {isa = PBXBuildFile; fileRef = C3A110311B271BA600D08D55 /* UIResponder+HKProjectBase.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C30AB8971CF09E470068C0A4 /* UITextField+HKPlaceHolder.h in Headers */ = {isa = PBXBuildFile; fileRef = C333B2EE1B3AAEAE00F12CBD /* UITextField+HKPlaceHolder.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C30AB8981CF09E470068C0A4 /* HKProjectBaseUtils.h in Headers */ = {isa = PBXBuildFile; fileRef = C329356B1B248B2C0029E7F9 /* HKProjectBaseUtils.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C30AB8991CF09E470068C0A4 /* HKKeyboardManager.h in Headers */ = {isa = PBXBuildFile; fileRef = C3E608EF1C2C12790075F9D2 /* HKKeyboardManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C30AB89A1CF09E470068C0A4 /* HKUserDefaults.h in Headers */ = {isa = PBXBuildFile; fileRef = C3F780401B422644007002E6 /* HKUserDefaults.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C30AB89B1CF09E470068C0A4 /* NSDate+HKProjectBase.h in Headers */ = {isa = PBXBuildFile; fileRef = C32935681B2489CF0029E7F9 /* NSDate+HKProjectBase.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C30AB89C1CF09E470068C0A4 /* NSString+HKBase64.h in Headers */ = {isa = PBXBuildFile; fileRef = C3C667501B2E542C00A80A92 /* NSString+HKBase64.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C30AB89D1CF09E470068C0A4 /* NSString+HKRC4.h in Headers */ = {isa = PBXBuildFile; fileRef = C3F780431B423790007002E6 /* NSString+HKRC4.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C30AB89E1CF09E470068C0A4 /* NSString+HKProjectBase.h in Headers */ = {isa = PBXBuildFile; fileRef = C3A888041B3CFA5000DB9032 /* NSString+HKProjectBase.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C30AB89F1CF09E470068C0A4 /* UIColor+HKHex.h in Headers */ = {isa = PBXBuildFile; fileRef = C3DDA8C41B8DAB32003DB53B /* UIColor+HKHex.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C30AB8A01CF09E470068C0A4 /* HKPinYinIndexer.h in Headers */ = {isa = PBXBuildFile; fileRef = C3C9EB941B9FF2770081321B /* HKPinYinIndexer.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C30AB8A11CF09E470068C0A4 /* HKThinLine.h in Headers */ = {isa = PBXBuildFile; fileRef = C307C2B41CC65CBD00CB3C72 /* HKThinLine.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C30AB8A21CF09E830068C0A4 /* UIView+HKProjectBase.m in Sources */ = {isa = PBXBuildFile; fileRef = C3D3217F1B29B5F700147A14 /* UIView+HKProjectBase.m */; };
+		C30AB8A31CF09E830068C0A4 /* UIViewController+HKProjectBase.m in Sources */ = {isa = PBXBuildFile; fileRef = C32935601B247BB40029E7F9 /* UIViewController+HKProjectBase.m */; };
+		C30AB8A41CF09E830068C0A4 /* UIAlertController+HKProjectBase.m in Sources */ = {isa = PBXBuildFile; fileRef = C3D1CFE61BE0BA5A0013FC26 /* UIAlertController+HKProjectBase.m */; };
+		C30AB8A51CF09E830068C0A4 /* UINavigationBar+HKProjectBase.m in Sources */ = {isa = PBXBuildFile; fileRef = C3A147F51B25D0D3005D3304 /* UINavigationBar+HKProjectBase.m */; };
+		C30AB8A61CF09E830068C0A4 /* UIResponder+HKProjectBase.m in Sources */ = {isa = PBXBuildFile; fileRef = C3A110321B271BA600D08D55 /* UIResponder+HKProjectBase.m */; };
+		C30AB8A71CF09E830068C0A4 /* UITextField+HKPlaceHolder.m in Sources */ = {isa = PBXBuildFile; fileRef = C333B2EF1B3AAEAE00F12CBD /* UITextField+HKPlaceHolder.m */; };
+		C30AB8A81CF09E830068C0A4 /* HKProjectBaseUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = C329356C1B248B2C0029E7F9 /* HKProjectBaseUtils.m */; };
+		C30AB8A91CF09E830068C0A4 /* HKKeyboardManager.m in Sources */ = {isa = PBXBuildFile; fileRef = C3E608F01C2C12790075F9D2 /* HKKeyboardManager.m */; };
+		C30AB8AA1CF09E830068C0A4 /* HKUserDefaults.m in Sources */ = {isa = PBXBuildFile; fileRef = C3F780411B422644007002E6 /* HKUserDefaults.m */; };
+		C30AB8AB1CF09E830068C0A4 /* NSDate+HKProjectBase.m in Sources */ = {isa = PBXBuildFile; fileRef = C32935691B2489CF0029E7F9 /* NSDate+HKProjectBase.m */; };
+		C30AB8AC1CF09E830068C0A4 /* NSString+HKBase64.m in Sources */ = {isa = PBXBuildFile; fileRef = C3C667511B2E542C00A80A92 /* NSString+HKBase64.m */; };
+		C30AB8AD1CF09E830068C0A4 /* NSString+HKRC4.m in Sources */ = {isa = PBXBuildFile; fileRef = C3F780441B423790007002E6 /* NSString+HKRC4.m */; };
+		C30AB8AE1CF09E830068C0A4 /* NSString+HKProjectBase.m in Sources */ = {isa = PBXBuildFile; fileRef = C3A888051B3CFA5000DB9032 /* NSString+HKProjectBase.m */; };
+		C30AB8AF1CF09E840068C0A4 /* UIColor+HKHex.m in Sources */ = {isa = PBXBuildFile; fileRef = C3DDA8C51B8DAB32003DB53B /* UIColor+HKHex.m */; };
+		C30AB8B01CF09E840068C0A4 /* HKPinYinIndexer.m in Sources */ = {isa = PBXBuildFile; fileRef = C3C9EB951B9FF2770081321B /* HKPinYinIndexer.m */; };
+		C30AB8B11CF09E840068C0A4 /* HKThinLine.m in Sources */ = {isa = PBXBuildFile; fileRef = C307C2B51CC65CBD00CB3C72 /* HKThinLine.m */; };
 		C32934D71B2469050029E7F9 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C32934D61B2469050029E7F9 /* main.m */; };
 		C32934DA1B2469050029E7F9 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C32934D91B2469050029E7F9 /* AppDelegate.m */; };
 		C32934DD1B2469050029E7F9 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C32934DC1B2469050029E7F9 /* ViewController.m */; };
 		C32934E01B2469050029E7F9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C32934DE1B2469050029E7F9 /* Main.storyboard */; };
 		C32934E21B2469050029E7F9 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C32934E11B2469050029E7F9 /* Images.xcassets */; };
 		C32934E51B2469050029E7F9 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = C32934E31B2469050029E7F9 /* LaunchScreen.xib */; };
-		C32935221B246D1B0029E7F9 /* HK_ProgressHUD_CheckMark.png in Resources */ = {isa = PBXBuildFile; fileRef = C32935161B246D1B0029E7F9 /* HK_ProgressHUD_CheckMark.png */; };
-		C32935231B246D1B0029E7F9 /* HK_ProgressHUD_CheckMark@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C32935171B246D1B0029E7F9 /* HK_ProgressHUD_CheckMark@2x.png */; };
 		C329352A1B246D5D0029E7F9 /* HKProjectBase.podspec in Resources */ = {isa = PBXBuildFile; fileRef = C32935271B246D5D0029E7F9 /* HKProjectBase.podspec */; };
 		C329352B1B246D5D0029E7F9 /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = C32935281B246D5D0029E7F9 /* LICENSE */; };
 		C32935611B247BB40029E7F9 /* UIViewController+HKProjectBase.m in Sources */ = {isa = PBXBuildFile; fileRef = C32935601B247BB40029E7F9 /* UIViewController+HKProjectBase.m */; };
 		C329356A1B2489CF0029E7F9 /* NSDate+HKProjectBase.m in Sources */ = {isa = PBXBuildFile; fileRef = C32935691B2489CF0029E7F9 /* NSDate+HKProjectBase.m */; };
 		C329356D1B248B2C0029E7F9 /* HKProjectBaseUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = C329356C1B248B2C0029E7F9 /* HKProjectBaseUtils.m */; };
 		C333B2F01B3AAEAE00F12CBD /* UITextField+HKPlaceHolder.m in Sources */ = {isa = PBXBuildFile; fileRef = C333B2EF1B3AAEAE00F12CBD /* UITextField+HKPlaceHolder.m */; };
-		C3A1102D1B2712C800D08D55 /* UIViewController+HKKeyboardManager.m in Sources */ = {isa = PBXBuildFile; fileRef = C3A1102C1B2712C800D08D55 /* UIViewController+HKKeyboardManager.m */; };
 		C3A110331B271BA600D08D55 /* UIResponder+HKProjectBase.m in Sources */ = {isa = PBXBuildFile; fileRef = C3A110321B271BA600D08D55 /* UIResponder+HKProjectBase.m */; };
 		C3A147F61B25D0D3005D3304 /* UINavigationBar+HKProjectBase.m in Sources */ = {isa = PBXBuildFile; fileRef = C3A147F51B25D0D3005D3304 /* UINavigationBar+HKProjectBase.m */; };
 		C3A888061B3CFA5000DB9032 /* NSString+HKProjectBase.m in Sources */ = {isa = PBXBuildFile; fileRef = C3A888051B3CFA5000DB9032 /* NSString+HKProjectBase.m */; };
@@ -37,11 +69,38 @@
 		C3F780451B423790007002E6 /* NSString+HKRC4.m in Sources */ = {isa = PBXBuildFile; fileRef = C3F780441B423790007002E6 /* NSString+HKRC4.m */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		C30AB88A1CF09DF20068C0A4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C32934C91B2469050029E7F9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C30AB8841CF09DF20068C0A4;
+			remoteInfo = HKProjectBase;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		C30AB8911CF09DF20068C0A4 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				C30AB88D1CF09DF20068C0A4 /* HKProjectBase.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		9AA50200010FF44ECCEA6E86 /* Pods-HKProjectBase-Sample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HKProjectBase-Sample.release.xcconfig"; path = "Pods/Target Support Files/Pods-HKProjectBase-Sample/Pods-HKProjectBase-Sample.release.xcconfig"; sourceTree = "<group>"; };
 		A427122FC33D74D43132950F /* libPods-HKProjectBase-Sample.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-HKProjectBase-Sample.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C307C2B41CC65CBD00CB3C72 /* HKThinLine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HKThinLine.h; sourceTree = "<group>"; };
 		C307C2B51CC65CBD00CB3C72 /* HKThinLine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HKThinLine.m; sourceTree = "<group>"; };
+		C30AB8851CF09DF20068C0A4 /* HKProjectBase.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = HKProjectBase.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C30AB8871CF09DF20068C0A4 /* HKProjectBase.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HKProjectBase.h; sourceTree = "<group>"; };
+		C30AB8891CF09DF20068C0A4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C32934D11B2469050029E7F9 /* HKProjectBase-Sample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "HKProjectBase-Sample.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C32934D51B2469050029E7F9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C32934D61B2469050029E7F9 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -52,8 +111,6 @@
 		C32934DF1B2469050029E7F9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		C32934E11B2469050029E7F9 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		C32934E41B2469050029E7F9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
-		C32935161B246D1B0029E7F9 /* HK_ProgressHUD_CheckMark.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = HK_ProgressHUD_CheckMark.png; sourceTree = "<group>"; };
-		C32935171B246D1B0029E7F9 /* HK_ProgressHUD_CheckMark@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "HK_ProgressHUD_CheckMark@2x.png"; sourceTree = "<group>"; };
 		C329351A1B246D1B0029E7F9 /* HKProjectBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HKProjectBase.h; sourceTree = "<group>"; };
 		C32935271B246D5D0029E7F9 /* HKProjectBase.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = HKProjectBase.podspec; path = ../HKProjectBase.podspec; sourceTree = "<group>"; };
 		C32935281B246D5D0029E7F9 /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
@@ -66,8 +123,6 @@
 		C329356C1B248B2C0029E7F9 /* HKProjectBaseUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HKProjectBaseUtils.m; sourceTree = "<group>"; };
 		C333B2EE1B3AAEAE00F12CBD /* UITextField+HKPlaceHolder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITextField+HKPlaceHolder.h"; sourceTree = "<group>"; };
 		C333B2EF1B3AAEAE00F12CBD /* UITextField+HKPlaceHolder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITextField+HKPlaceHolder.m"; sourceTree = "<group>"; };
-		C3A1102B1B2712C800D08D55 /* UIViewController+HKKeyboardManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+HKKeyboardManager.h"; sourceTree = "<group>"; };
-		C3A1102C1B2712C800D08D55 /* UIViewController+HKKeyboardManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+HKKeyboardManager.m"; sourceTree = "<group>"; };
 		C3A110311B271BA600D08D55 /* UIResponder+HKProjectBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIResponder+HKProjectBase.h"; sourceTree = "<group>"; };
 		C3A110321B271BA600D08D55 /* UIResponder+HKProjectBase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIResponder+HKProjectBase.m"; sourceTree = "<group>"; };
 		C3A147F41B25D0D3005D3304 /* UINavigationBar+HKProjectBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UINavigationBar+HKProjectBase.h"; sourceTree = "<group>"; };
@@ -94,10 +149,18 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		C30AB8811CF09DF20068C0A4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		C32934CE1B2469050029E7F9 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C30AB88C1CF09DF20068C0A4 /* HKProjectBase.framework in Frameworks */,
 				34A8FE892DBA4AA8261B5983 /* libPods-HKProjectBase-Sample.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -122,11 +185,21 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		C30AB8861CF09DF20068C0A4 /* HKProjectBase */ = {
+			isa = PBXGroup;
+			children = (
+				C30AB8871CF09DF20068C0A4 /* HKProjectBase.h */,
+				C30AB8891CF09DF20068C0A4 /* Info.plist */,
+			);
+			path = HKProjectBase;
+			sourceTree = "<group>";
+		};
 		C32934C81B2469050029E7F9 = {
 			isa = PBXGroup;
 			children = (
 				C32934FA1B2469FB0029E7F9 /* HKProjectBase */,
 				C32934D31B2469050029E7F9 /* HKProjectBase-Sample */,
+				C30AB8861CF09DF20068C0A4 /* HKProjectBase */,
 				C32934D21B2469050029E7F9 /* Products */,
 				68EB145AB5492F80DA05A133 /* Pods */,
 				6606FDCA50EC16FB3D0577F6 /* Frameworks */,
@@ -137,6 +210,7 @@
 			isa = PBXGroup;
 			children = (
 				C32934D11B2469050029E7F9 /* HKProjectBase-Sample.app */,
+				C30AB8851CF09DF20068C0A4 /* HKProjectBase.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -171,20 +245,9 @@
 				C32935271B246D5D0029E7F9 /* HKProjectBase.podspec */,
 				C32935281B246D5D0029E7F9 /* LICENSE */,
 				C32935291B246D5D0029E7F9 /* README.md */,
-				C32935141B246D1B0029E7F9 /* Assets */,
 				C32935181B246D1B0029E7F9 /* Classes */,
 			);
 			name = HKProjectBase;
-			sourceTree = "<group>";
-		};
-		C32935141B246D1B0029E7F9 /* Assets */ = {
-			isa = PBXGroup;
-			children = (
-				C32935161B246D1B0029E7F9 /* HK_ProgressHUD_CheckMark.png */,
-				C32935171B246D1B0029E7F9 /* HK_ProgressHUD_CheckMark@2x.png */,
-			);
-			name = Assets;
-			path = ../Pod/Assets;
 			sourceTree = "<group>";
 		};
 		C32935181B246D1B0029E7F9 /* Classes */ = {
@@ -211,8 +274,6 @@
 				C3A147F51B25D0D3005D3304 /* UINavigationBar+HKProjectBase.m */,
 				C3A110311B271BA600D08D55 /* UIResponder+HKProjectBase.h */,
 				C3A110321B271BA600D08D55 /* UIResponder+HKProjectBase.m */,
-				C3A1102B1B2712C800D08D55 /* UIViewController+HKKeyboardManager.h */,
-				C3A1102C1B2712C800D08D55 /* UIViewController+HKKeyboardManager.m */,
 				C333B2EE1B3AAEAE00F12CBD /* UITextField+HKPlaceHolder.h */,
 				C333B2EF1B3AAEAE00F12CBD /* UITextField+HKPlaceHolder.m */,
 			);
@@ -248,7 +309,52 @@
 		};
 /* End PBXGroup section */
 
+/* Begin PBXHeadersBuildPhase section */
+		C30AB8821CF09DF20068C0A4 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C30AB8881CF09DF20068C0A4 /* HKProjectBase.h in Headers */,
+				C30AB8921CF09E470068C0A4 /* UIView+HKProjectBase.h in Headers */,
+				C30AB8931CF09E470068C0A4 /* UIViewController+HKProjectBase.h in Headers */,
+				C30AB8941CF09E470068C0A4 /* UIAlertController+HKProjectBase.h in Headers */,
+				C30AB8951CF09E470068C0A4 /* UINavigationBar+HKProjectBase.h in Headers */,
+				C30AB8961CF09E470068C0A4 /* UIResponder+HKProjectBase.h in Headers */,
+				C30AB8971CF09E470068C0A4 /* UITextField+HKPlaceHolder.h in Headers */,
+				C30AB8981CF09E470068C0A4 /* HKProjectBaseUtils.h in Headers */,
+				C30AB8991CF09E470068C0A4 /* HKKeyboardManager.h in Headers */,
+				C30AB89A1CF09E470068C0A4 /* HKUserDefaults.h in Headers */,
+				C30AB89B1CF09E470068C0A4 /* NSDate+HKProjectBase.h in Headers */,
+				C30AB89C1CF09E470068C0A4 /* NSString+HKBase64.h in Headers */,
+				C30AB89D1CF09E470068C0A4 /* NSString+HKRC4.h in Headers */,
+				C30AB89E1CF09E470068C0A4 /* NSString+HKProjectBase.h in Headers */,
+				C30AB89F1CF09E470068C0A4 /* UIColor+HKHex.h in Headers */,
+				C30AB8A01CF09E470068C0A4 /* HKPinYinIndexer.h in Headers */,
+				C30AB8A11CF09E470068C0A4 /* HKThinLine.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
 /* Begin PBXNativeTarget section */
+		C30AB8841CF09DF20068C0A4 /* HKProjectBase */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C30AB88E1CF09DF20068C0A4 /* Build configuration list for PBXNativeTarget "HKProjectBase" */;
+			buildPhases = (
+				C30AB8801CF09DF20068C0A4 /* Sources */,
+				C30AB8811CF09DF20068C0A4 /* Frameworks */,
+				C30AB8821CF09DF20068C0A4 /* Headers */,
+				C30AB8831CF09DF20068C0A4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = HKProjectBase;
+			productName = HKProjectBase;
+			productReference = C30AB8851CF09DF20068C0A4 /* HKProjectBase.framework */;
+			productType = "com.apple.product-type.framework";
+		};
 		C32934D01B2469050029E7F9 /* HKProjectBase-Sample */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = C32934F41B2469050029E7F9 /* Build configuration list for PBXNativeTarget "HKProjectBase-Sample" */;
@@ -258,10 +364,12 @@
 				C32934CE1B2469050029E7F9 /* Frameworks */,
 				C32934CF1B2469050029E7F9 /* Resources */,
 				A2CBC475FFA5DE272AEDD863 /* Copy Pods Resources */,
+				C30AB8911CF09DF20068C0A4 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				C30AB88B1CF09DF20068C0A4 /* PBXTargetDependency */,
 			);
 			name = "HKProjectBase-Sample";
 			productName = "HKProjectBase-Sample";
@@ -277,6 +385,9 @@
 				LastUpgradeCheck = 0710;
 				ORGANIZATIONNAME = Harley.xk;
 				TargetAttributes = {
+					C30AB8841CF09DF20068C0A4 = {
+						CreatedOnToolsVersion = 7.3.1;
+					};
 					C32934D01B2469050029E7F9 = {
 						CreatedOnToolsVersion = 6.3.2;
 					};
@@ -296,11 +407,19 @@
 			projectRoot = "";
 			targets = (
 				C32934D01B2469050029E7F9 /* HKProjectBase-Sample */,
+				C30AB8841CF09DF20068C0A4 /* HKProjectBase */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		C30AB8831CF09DF20068C0A4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		C32934CF1B2469050029E7F9 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -309,9 +428,7 @@
 				C32934E51B2469050029E7F9 /* LaunchScreen.xib in Resources */,
 				C32934E21B2469050029E7F9 /* Images.xcassets in Resources */,
 				C329352B1B246D5D0029E7F9 /* LICENSE in Resources */,
-				C32935231B246D1B0029E7F9 /* HK_ProgressHUD_CheckMark@2x.png in Resources */,
 				C329352A1B246D5D0029E7F9 /* HKProjectBase.podspec in Resources */,
-				C32935221B246D1B0029E7F9 /* HK_ProgressHUD_CheckMark.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -351,6 +468,29 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		C30AB8801CF09DF20068C0A4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C30AB8A21CF09E830068C0A4 /* UIView+HKProjectBase.m in Sources */,
+				C30AB8A31CF09E830068C0A4 /* UIViewController+HKProjectBase.m in Sources */,
+				C30AB8A41CF09E830068C0A4 /* UIAlertController+HKProjectBase.m in Sources */,
+				C30AB8A51CF09E830068C0A4 /* UINavigationBar+HKProjectBase.m in Sources */,
+				C30AB8A61CF09E830068C0A4 /* UIResponder+HKProjectBase.m in Sources */,
+				C30AB8A71CF09E830068C0A4 /* UITextField+HKPlaceHolder.m in Sources */,
+				C30AB8A81CF09E830068C0A4 /* HKProjectBaseUtils.m in Sources */,
+				C30AB8A91CF09E830068C0A4 /* HKKeyboardManager.m in Sources */,
+				C30AB8AA1CF09E830068C0A4 /* HKUserDefaults.m in Sources */,
+				C30AB8AB1CF09E830068C0A4 /* NSDate+HKProjectBase.m in Sources */,
+				C30AB8AC1CF09E830068C0A4 /* NSString+HKBase64.m in Sources */,
+				C30AB8AD1CF09E830068C0A4 /* NSString+HKRC4.m in Sources */,
+				C30AB8AE1CF09E830068C0A4 /* NSString+HKProjectBase.m in Sources */,
+				C30AB8AF1CF09E840068C0A4 /* UIColor+HKHex.m in Sources */,
+				C30AB8B01CF09E840068C0A4 /* HKPinYinIndexer.m in Sources */,
+				C30AB8B11CF09E840068C0A4 /* HKThinLine.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		C32934CD1B2469050029E7F9 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -372,13 +512,20 @@
 				C307C2B61CC65CBD00CB3C72 /* HKThinLine.m in Sources */,
 				C3A888061B3CFA5000DB9032 /* NSString+HKProjectBase.m in Sources */,
 				C3C9EB961B9FF2770081321B /* HKPinYinIndexer.m in Sources */,
-				C3A1102D1B2712C800D08D55 /* UIViewController+HKKeyboardManager.m in Sources */,
 				C32935611B247BB40029E7F9 /* UIViewController+HKProjectBase.m in Sources */,
 				C32934D71B2469050029E7F9 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		C30AB88B1CF09DF20068C0A4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C30AB8841CF09DF20068C0A4 /* HKProjectBase */;
+			targetProxy = C30AB88A1CF09DF20068C0A4 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		C32934DE1B2469050029E7F9 /* Main.storyboard */ = {
@@ -400,6 +547,52 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		C30AB88F1CF09DF20068C0A4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NONNULL = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = HKProjectBase/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.Harley-xk.HKProjectBase";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		C30AB8901CF09DF20068C0A4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NONNULL = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = HKProjectBase/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.Harley-xk.HKProjectBase";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
 		C32934F21B2469050029E7F9 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -510,6 +703,14 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		C30AB88E1CF09DF20068C0A4 /* Build configuration list for PBXNativeTarget "HKProjectBase" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C30AB88F1CF09DF20068C0A4 /* Debug */,
+				C30AB8901CF09DF20068C0A4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
 		C32934CC1B2469050029E7F9 /* Build configuration list for PBXProject "HKProjectBase-Sample" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

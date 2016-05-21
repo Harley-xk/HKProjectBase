@@ -27,10 +27,4 @@
     self.titleTextAttributes = titleTextAttributes;
 }
 
-
-- (void)hk_setTitleColor:(UIColor *)color
-{
-    [self setTextColor:color];
-}
-
 @end

@@ -26,17 +26,4 @@
     [self becomeFirstResponder];
 }
 
-#pragma mark - DEPRECATED
-
-+ (BOOL)resignAllFirstResponders
-{
-    return [self resignAnyFirstResponder];
-}
-
-- (IBAction)hk_resighFirstResponder
-{
-    [self hk_resignFirstResponder];
-}
-
-
 @end

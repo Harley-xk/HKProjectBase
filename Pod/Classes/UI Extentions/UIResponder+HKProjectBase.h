@@ -16,9 +16,4 @@
 - (IBAction)hk_becomeFirstResponder;
 
 
-#pragma mark - DEPRECATED
-+ (BOOL)resignAllFirstResponders NS_DEPRECATED_IOS(2.0,6.0,"This method is DEPRECATED, Use resignAnyFirstResponder instead");
-- (IBAction)hk_resighFirstResponder NS_DEPRECATED_IOS(2.0,6.0,"This method is DEPRECATED, Use hk_resignFirstResponder instead");
-
-
 @end

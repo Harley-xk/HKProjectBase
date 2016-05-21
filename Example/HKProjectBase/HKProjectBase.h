@@ -2,12 +2,19 @@
 //  HKProjectBase.h
 //  HKProjectBase
 //
-//  Created by Harley.xk on 15/6/7.
-//  Copyright (c) 2015年 Harley.xk. All rights reserved.
+//  Created by Harley.xk on 16/5/21.
+//  Copyright © 2016年 Harley.xk. All rights reserved.
 //
 
-#ifndef Pods_HKProjectBase_h
-#define Pods_HKProjectBase_h
+#import <UIKit/UIKit.h>
+
+//! Project version number for HKProjectBase.
+FOUNDATION_EXPORT double HKProjectBaseVersionNumber;
+
+//! Project version string for HKProjectBase.
+FOUNDATION_EXPORT const unsigned char HKProjectBaseVersionString[];
+
+// In this header, you should import all the public headers of your framework using statements like #import <HKProjectBase/PublicHeader.h>
 
 #import "UIViewController+HKProjectBase.h"
 #import "UIAlertController+HKProjectBase.h"
@@ -26,4 +33,3 @@
 #import "UIColor+HKHex.h"
 #import "HKPinYinIndexer.h"
 
-#endif

@@ -19,8 +19,4 @@
  */
 - (void)setTitleFont:(UIFont *)font;
 
-
-#pragma mark - DEPRECATED
-- (void)hk_setTitleColor:(UIColor *)color NS_DEPRECATED_IOS(2.0,6.0,"This method is DEPRECATED, Use setTextColor: instead");
-
 @end
