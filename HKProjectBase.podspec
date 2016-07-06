@@ -9,7 +9,7 @@
 
 Pod::Spec.new do |s|
   s.name             = "HKProjectBase"
-  s.version          = "2.0.0"
+  s.version          = "2.0.1"
   s.summary          = "Some base extentions for iOS Projects in Objective-C."
   s.description      = <<-DESC
                        An optional longer description of HKProjectBase

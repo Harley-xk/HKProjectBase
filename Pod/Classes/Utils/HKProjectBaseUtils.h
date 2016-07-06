@@ -97,7 +97,7 @@ extern NSString* HKPathAtDocuments(NSString *subPath);
 extern NSString* HKLibraryPath();
 extern NSString* HKPathAtLibrary(NSString *subPath);
 
-// Library/Application Support 目录默认不存在，需要手动创建
+// Library/Application Support 目录默认不存在, 调用该方法后会自动创建
 extern NSString* HKApplicationSupportPath();
 extern NSString* HKPathAtApplicationSupport(NSString *subPath);
 
