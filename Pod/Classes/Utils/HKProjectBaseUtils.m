@@ -369,7 +369,7 @@ extern void HKExcuteAfterOnMainQueue(NSTimeInterval seconds, void(^block)(void))
 
 extern void HKExcuteAfterOnHighPriorityGloableQueue(NSTimeInterval seconds, void(^block)(void))
 {
-    HKExcuteAfterOnQueue(seconds, dispatch_get_global_queue(0, DISPATCH_QUEUE_PRIORITY_HIGH), block);
+    HKExcuteAfterOnQueue(seconds, dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_HIGH, 0), block);
 }
 
 extern void HKExcuteAfterOnQueue(NSTimeInterval seconds, dispatch_queue_t queue, void(^block)(void))
@@ -388,7 +388,7 @@ extern void HKExcuteAsyncOnMainQueue(void(^block)(void))
 
 extern void HKExcuteAsyncOnHighPriorityGloableQueue(void(^block)(void))
 {
-    HKExcuteAsyncOnQueue(dispatch_get_global_queue(0, DISPATCH_QUEUE_PRIORITY_HIGH), block);
+    HKExcuteAsyncOnQueue(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_HIGH, 0), block);
 }
 
 extern void HKExcuteAsyncOnQueue(dispatch_queue_t queue, void(^block)(void))
