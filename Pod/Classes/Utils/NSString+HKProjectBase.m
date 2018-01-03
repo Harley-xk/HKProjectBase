@@ -132,7 +132,7 @@
     CFMutableStringRef nameRef = CFStringCreateMutableCopy(NULL, 0, (CFStringRef)self);
     //转换为带声调的拼音
     CFStringTransform(nameRef, NULL, kCFStringTransformMandarinLatin, NO);
-    return (__bridge NSString *)(nameRef);
+    return (__bridge_transfer NSString *)(nameRef);
 }
 /**
  *  不带声调的拼音
@@ -144,7 +144,7 @@
     CFStringTransform(nameRef, NULL, kCFStringTransformMandarinLatin, NO);
     //去除声调
     CFStringTransform(nameRef, NULL, kCFStringTransformStripDiacritics, NO);
-    NSString *pinyin = (__bridge NSString *)(nameRef);
+    NSString *pinyin = (__bridge_transfer NSString *)(nameRef);
     return pinyin;
 }
 
