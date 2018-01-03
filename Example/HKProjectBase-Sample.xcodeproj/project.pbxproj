@@ -709,6 +709,7 @@
 				C30AB9181CF0A5F20068C0A4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		C32934CC1B2469050029E7F9 /* Build configuration list for PBXProject "HKProjectBase-Sample" */ = {
 			isa = XCConfigurationList;
